@@ -1,4 +1,5 @@
 #Karim Yaghmour, Embedded Android - Porting, Extending, and Customizing, O'Reilly 2013
+![Embedded Android](http://akamaicovers.oreilly.com/images/0636920021094/lrg.jpg)
 - 1. Introduction
 - 2. Internals Primer
 - 3. AOSP Jump-Start
