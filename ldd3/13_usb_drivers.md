@@ -3,9 +3,11 @@
 
 _USB core_
 - a subsystem provided by the Linux kernel
-- USB devices consist of configurations, interfaces, and endpoints
+
 ![gif](http://www.makelinux.net/ldd3/images/0596005903/figs/ldr3_1302.gif)
-A USB device is a very complex thing, as described in the official USB documentation (available at http://www.usb.org). Fortunately, the Linux kernel provides a subsystem called the _USB core_ to handle most of the complexity. This chapter describes the interaction between a driver and the USB core. Figure 13-1 shows how USB devices consist of configurations, interfaces, and endpoints and how USB drivers bind to USB interfaces, not the entire USB device.
+
+- USB devices consist of configurations, interfaces, and endpoints.
+- USB drivers bind to USB interfaces, not the entire USB device.
 
 ##13.2. USB and Sysfs
 ##13.3. USB Urbs
