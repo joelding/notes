@@ -1,5 +1,12 @@
 #Chapter 13. USB Drivers
 ##13.1. USB Device Basics
+
+_USB core_
+- a subsystem provided by the Linux kernel
+- USB devices consist of configurations, interfaces, and endpoints
+![gif](http://www.makelinux.net/ldd3/images/0596005903/figs/ldr3_1302.gif)
+A USB device is a very complex thing, as described in the official USB documentation (available at http://www.usb.org). Fortunately, the Linux kernel provides a subsystem called the _USB core_ to handle most of the complexity. This chapter describes the interaction between a driver and the USB core. Figure 13-1 shows how USB devices consist of configurations, interfaces, and endpoints and how USB drivers bind to USB interfaces, not the entire USB device.
+
 ##13.2. USB and Sysfs
 ##13.3. USB Urbs
 
@@ -15,6 +22,11 @@ urb
  4. the USB core submits to the specific USB host controller driver for the specified device.
  5. the USB host controller driver makes a USB transfer to the device.
  6. When the urb is completed, the USB host controller driver notifies the USB device driver.
+- The driver that submitted the urb can cancel urbs any time; if the device is removed, the USB core can cancel urbs.
+
+
+
+
 
 
 ##13.4. Writing a USB Driver

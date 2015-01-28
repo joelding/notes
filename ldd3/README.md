@@ -1,0 +1,2 @@
+- Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman, Linux Device Drivers, 3/e, O'reilly 2005 (http://lwn.net/Kernel/LDD3/)
+- Constantine Shulyupin, webpage form from Tel Aviv, Israel [LDD3](http://www.makelinux.net/ldd3/)
