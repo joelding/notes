@@ -9,12 +9,12 @@ urb
 - include/linux/usb.h
 - struct urb
 - The typical lifecycle:
- - a USB device driver create a urb.
- - a urb is assigned to a specific endpoint of a specific USB device.
- - the USB device driver submits a urb to the USB core.
- - the USB core submits to the specific USB host controller driver for the specified device.
- - the USB host controller driver makes a USB transfer to the device.
- - When the urb is completed, the USB host controller driver notifies the USB device driver.
+ 1. a USB device driver create a urb.
+ 2. a urb is assigned to a specific endpoint of a specific USB device.
+ 3. the USB device driver submits a urb to the USB core.
+ 4. the USB core submits to the specific USB host controller driver for the specified device.
+ 5. the USB host controller driver makes a USB transfer to the device.
+ 6. When the urb is completed, the USB host controller driver notifies the USB device driver.
 
 
 ##13.4. Writing a USB Driver
