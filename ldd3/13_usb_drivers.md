@@ -18,12 +18,57 @@
 
 ##13.1. USB Device Basics
 
-_USB core_
-- a subsystem provided by the Linux kernel
+- This chapter describes the interaction between a driver and the USB core.
+- _USB core_: a subsystem provided by the Linux kernel
 
 ![gif](http://www.makelinux.net/ldd3/images/0596005903/figs/ldr3_1302.gif)
 
-- USB devices consist of configurations, interfaces, and endpoints.
+- A USB device consists of configurations, interfaces, and endpoints.
+- _endpoint_: the most basic form of USB communication.
+- A USB endpoint can carry data in only one direction (a unidirectional pipes), either from the host computer to the device (_an OUT endpoint_) or from the device to the host computer (an _IN endpoint_).
+- A USB endpoint can be one of four different types that describe how the data is transmitted: control, interrupt, bulk, isochronous
+
+- _Control endpoints_ are used 
+ - to allow access to different parts of the USB device. 
+ - for configuring the device, retrieving information about the device, sending commands to the device, or retrieving status reports about the device. 
+ - usually small in size (they can hold lesss characters at once)
+ - Every USB device has a control endpoint called "_endpoint 0_" that is used by the USB core to configure the device at insertion time. These transfers are guaranteed by the USB protocol to always have enough reserved bandwidth to make it through to the device.
+
+- _Interrupt endpoints_ transfer small amounts of data at a fixed rate every time the USB host asks the device for data. 
+ - the primary transport method for USB keyboards and mice. 
+ - commonly used to send data to USB devices to control the device
+ - not generally used to transfer large amounts of data
+ - guaranteed by the USB protocol to always have enough reserved bandwidth
+
+- _Bulk endpoints_ transfer large amounts of data. 
+ - usually much larger (they can hold more characters at once) than interrupt endpoints.
+ - for devices that need to transfer with no data loss. 
+ - not guaranteed to always make it through in a specific amount of time
+ - common on printers, storage, and network devices.
+
+- _Isochronous endpoints_ also transfer large amounts of data
+ - the data is not always guaranteed to make it through. 
+ - These endpoints in devices can handle loss of data
+ - Rely more on keeping a constant stream of data flowing. For example, real-time data collections, such as audio and video devices.
+
+Control and buld endpoints used for asynchronous data transfers. Interrupt and isochronous endpoints are for periodic data transfers.
+
+**struct usb\_host\_endpoint**: 
+- USB endpoints are described in the kernel. 
+-  contains the real endpoint information in another structure called **struct usb\_endpoint\_descriptor**
+
+
+- An interface contains several USB endpoints
+- An interface handles only one type of a USB logical connection.
+- Some USB devices have multiple interfaces.
+
+**struct usb\_interface**
+
+A USB device can have and might switch among multiple configurations to change the state of the device. For example, some devices that allow firmware to be downloaded to them contain multiple configurations to accomplish this. A single configuration can be enabled only at one point in time.
+
+**struct usb\_host\_config**
+**struct usb\_device**
+
 - USB drivers bind to USB interfaces, not the entire USB device.
 
 ##13.2. USB and Sysfs
@@ -54,3 +99,4 @@ urb
 
 #REFERENCES
 1. Linux Kernel Module Programming - USB Device Driver 01 [link](http://youtu.be/NYRhkGrt4Q4?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
+2. Linux Kernel Module Programming - USB Device Driver 02 [link](http://youtu.be/5IDL070RtoQ?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
