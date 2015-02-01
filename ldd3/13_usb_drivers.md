@@ -98,5 +98,6 @@ urb
 ##13.6. Quick Reference 
 
 #REFERENCES
-1. Linux Kernel Module Programming - USB Device Driver 01 [link](http://youtu.be/NYRhkGrt4Q4?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
-2. Linux Kernel Module Programming - USB Device Driver 02 [link](http://youtu.be/5IDL070RtoQ?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
+2. Linux Kernel Module Programming - USB Device Driver 01 [link](http://youtu.be/NYRhkGrt4Q4?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
+3. Linux Kernel Module Programming - USB Device Driver 02 [link](http://youtu.be/5IDL070RtoQ?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
+4. ![img](http://218.249.32.138/web/9787121158179.jpg) 任桥伟、肖季东、肖林甫，Linux那些事儿之我是USB（第2版） 本书基于2.6.22内核，对USB子系统的大部分源代码逐行进行分析，系统地阐释了Linux内核中USB子系统是如何运转的，子系统内部的各个模块之间是如何互相协作、配合的。本次改版修改了第1版中出现的错误，增加了一个附录，主要内容是关于Linux内核的学习方法，是作者的经验总结，值得一读。 本书使用幽默诙谐的笔调对Linux内核中的USB子系统源代码进行了分析，形象且详尽地介绍了USB在Linux中的实现。本书从U盘、Hub、USB Core到主机控制器覆盖了USB实现的方方面面，被一些网友誉为USB开发的“圣经”。
