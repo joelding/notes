@@ -1,3 +1,6 @@
+#2015/02/02 JN 8:12~20 耶穌是世界的光
+
+
 #2015/02/01
 
 **The earliest and most reliable manuscripts and other ancient witnesses do not have JN 7:53~8:11.** 「行淫時被拿的婦人」只出現在約翰福音。初期教會的資料曾多次提起這記述，也符合福音書的內容，因此被教會接納為正典，並按較晚的古卷排在第七章之後。
