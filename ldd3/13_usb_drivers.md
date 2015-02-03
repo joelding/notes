@@ -104,14 +104,10 @@ urb
 
 3. Linux Kernel Module Programming - USB Device Driver 02 [link](http://youtu.be/5IDL070RtoQ?list=PLM8zRjaI08aQKKdUIqObqLTp4o5A67pOy)
 
-4. 任桥伟、肖季东、肖林甫，Linux那些事儿之我是USB（第2版），电子工业出版社 2012。_本书基于2.6.22内核，对USB子系统的大部分源代码逐行进行分析，系统地阐释了Linux内核中USB子系统是如何运转的，子系统内部的各个模块之间是如何互相协作、配合的。本次改版修改了第1版中出现的错误，增加了一个附录，主要内容是关于Linux内核的学习方法，是作者的经验总结，值得一读。 本书使用幽默诙谐的笔调对Linux内核中的USB子系统源代码进行了分析，形象且详尽地介绍了USB在Linux中的实现。本书从U盘、Hub、USB Core到主机控制器覆盖了USB实现的方方面面，被一些网友誉为USB开发的“圣经”。_
+4. 任桥伟、肖季东、肖林甫，Linux那些事儿之我是USB（第2版），电子工业出版社 2012。_本书基于2.6.22内核，对USB子系统的大部分源代码逐行进行分析，系统地阐释了Linux内核中USB子系统是如何运转的，子系统内部的各个模块之间是如何互相协作、配合的。本次改版修改了第1版中出现的错误，增加了一个附录，主要内容是关于Linux内核的学习方法，是作者的经验总结，值得一读。 本书使用幽默诙谐的笔调对Linux内核中的USB子系统源代码进行了分析，形象且详尽地介绍了USB在Linux中的实现。本书从U盘、Hub、USB Core到主机控制器覆盖了USB实现的方方面面，被一些网友誉为USB开发的“圣经”。_ ![img](http://218.249.32.138/web/9787121158179.jpg) 
 
-![img](http://218.249.32.138/web/9787121158179.jpg) 
+5. 刘荣，圈圈教你玩USB（第2版），北京航空航天大学出版社 2013。_通过U盘、USB鼠标、USB键盘、USB MIDI键盘、USB转串口、自定义的USB HID设备和自定义的USB设备等几个具体的USB例子，一步步讲解USB设备及驱动程序和应用程序开发的详细过程和步骤。第9和10章介绍USB WDM驱动开发，并给出一个简单的USB驱动和USB上层过滤驱动的实例。第2版中新增4章内容，包括USB触摸屏设备、移植到AVR单片机和ARM微控制器上以及更多的USB设备的实现。本书附带的光盘中有USB学习板的电路图以及所有实验的完整源代码包（C/C++语言）。本书的读者对象主要是USB设备与驱动设计的初学者和提高者，以及所有对圈圈的支持者。_ ![img](http://www.buaapress.com.cn/upload/book/9787512410923.jpg)
 
-5. 刘荣，圈圈教你玩USB（第2版），北京航空航天大学出版社 2013。_通过U盘、USB鼠标、USB键盘、USB MIDI键盘、USB转串口、自定义的USB HID设备和自定义的USB设备等几个具体的USB例子，一步步讲解USB设备及驱动程序和应用程序开发的详细过程和步骤。第9和10章介绍USB WDM驱动开发，并给出一个简单的USB驱动和USB上层过滤驱动的实例。第2版中新增4章内容，包括USB触摸屏设备、移植到AVR单片机和ARM微控制器上以及更多的USB设备的实现。本书附带的光盘中有USB学习板的电路图以及所有实验的完整源代码包（C/C++语言）。本书的读者对象主要是USB设备与驱动设计的初学者和提高者，以及所有对圈圈的支持者。_
+6. Jan Axelson, USB Complete - The Developer's Guide, Lakeview Research 2009. Jan Axelson's Lakeview Research [link](http://janaxelson.com/) ![img](http://i4.ebkimg.com/previews/000/000434/000434434/000434434-hq-168-80.jpg)
 
-![img](http://www.buaapress.com.cn/upload/book/9787512410923.jpg)
-
-6. Jan Axelson, USB Complete - The Developer's Guide, Lakeview Research 2009. Jan Axelson's Lakeview Research [link](http://janaxelson.com/) 
-
-![img](http://i4.ebkimg.com/previews/000/000434/000434434/000434434-hq-168-80.jpg)
+7. drivers/usb/README
