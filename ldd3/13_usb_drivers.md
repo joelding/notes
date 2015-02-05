@@ -53,6 +53,10 @@
 
 Control and buld endpoints used for asynchronous data transfers. Interrupt and isochronous endpoints are for periodic data transfers.
 
+所有的USB設備必須具有端點0，它可以作為in端點，也可以作為out端點。USB系統軟件利用它來實現默認的控制管道，從而控制設備。
+
+管道的通信有兩種：一種是stream、一種是message。message管道要求從端點0通過的數據必須有一定的格式，用於主機向設備請求信息，讓設備明白主機請求什麼。協議中規定，message管道必須對應兩個相同號碼的端點。一個用來in、一個用來out，默認管道就是message管道。
+
 **struct usb\_host\_endpoint**: 
 - USB endpoints are described in the kernel. 
 -  contains the real endpoint information in another structure called **struct usb\_endpoint\_descriptor**
@@ -97,6 +101,20 @@ urb
 ##13.5. USB Transfers Without Urbs
 ##13.6. Quick Reference 
 
+##TODO
+- Linux kernel 2.6.31 starts supporting USB 3.0.
+- The usb\_control\_msg
+ - allows a driver to send and receive USB control messages:
+struct usb_device *dev
+unsigned int pipe
+__u8 request
+__u8 requesttype
+__u16 value
+__u16 index
+void *data
+__u16 size
+int timeout
+
 #REFERENCES
 1. Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman, Linux Device Drivers, 3/e, O'reilly 2005
 
@@ -111,3 +129,9 @@ urb
 6. Jan Axelson, USB Complete - The Developer's Guide, Lakeview Research 2009. Jan Axelson's Lakeview Research [link](http://janaxelson.com/) ![img](http://i4.ebkimg.com/previews/000/000434/000434434/000434434-hq-168-80.jpg)
 
 7. drivers/usb/README
+
+8. 許永和老師 USB Lab-USB實驗室 技術交流-服務-學習-8051+USB設計 [link](http://www.usblab.idv.tw/)
+
+9. 許永和，微處理機與USB主從介面之設計與應用，儒林。配套實習板![img](http://www.usblab.idv.tw/images/ic-product/IMG_1957.JPG)
+
+10. 許永和，USB2.0 高速週邊裝置設計之實物應用，全華。配套實習板![img](http://www.usblab.idv.tw/images/ic-product/fx2-56.jpg) 
