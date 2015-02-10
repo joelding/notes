@@ -1,3 +1,12 @@
+#wk07 08 ~ 14 February
+
+Schematic Capture with gSchem [link](http://youtu.be/s5OPmICyGug)
+gschem basics: add symbols and nets part 0 (Auyeung) [link](http://youtu.be/uan1Cdl0kA0)
+
+int sqlite3_threadsafe(void);
+returns zero if and only if SQLite was compiled 
+
+
 #wk06
 
 EDA Software for Linux
