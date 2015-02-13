@@ -6,6 +6,9 @@ gschem basics: add symbols and nets part 0 (Auyeung) [link](http://youtu.be/uan1
 int sqlite3_threadsafe(void);
 returns zero if and only if SQLite was compiled 
 
+《啊哈！算法》扫描版
+《图灵的秘密：他的生平、思想及论文解读》扫描版
+
 
 #wk06
 
