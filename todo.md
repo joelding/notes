@@ -1,3 +1,9 @@
+#wk09
+
+「每一位基督徒的脖子上，都會掛一個『施工中』字樣的牌子，目的是提醒自己：要不斷成長、學習。我們人都不夠成熟，免不了會跌倒。」王純瑞，上帝給王雪紅的十堂課，大立文創 2014.10
+
+
+
 #wk07 08 ~ 14 February
 
 Schematic Capture with gSchem [link](http://youtu.be/s5OPmICyGug)
