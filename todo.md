@@ -4,14 +4,6 @@
 
 USB B Connector: symbol and footprint [line](http://openhardware.ro/geda-library/)
 
-#wk07 08 ~ 14 February
-
-Schematic Capture with gSchem [link](http://youtu.be/s5OPmICyGug)
-gschem basics: add symbols and nets part 0 (Auyeung) [link](http://youtu.be/uan1Cdl0kA0)
-
-int sqlite3_threadsafe(void);
-returns zero if and only if SQLite was compiled 
-
 1. 廠測使用ICE/ICD來進行，完全不需考慮功能韌體 (Peter建議，手機廠是如此作的)
 2. flash內完全不含廠測韌體，在測試進行前才用openssh將韌體殖入待測物
 3. flash內規劃廠測專用的partition來放置廠測韌體，由uboot來偵測GPIO並決定要從哪個partition開機
@@ -28,6 +20,16 @@ returns zero if and only if SQLite was compiled
 板子預留治具可用的接點、測試點：可以擺單面、絕不擺雙面；可省則省，越少越好。
 
 燒錄時間太長，則可能請廠商燒好再打到板子上，避免佔用產線燒錄。
+
+
+#wk07 08 ~ 14 February
+
+Schematic Capture with gSchem [link](http://youtu.be/s5OPmICyGug)
+gschem basics: add symbols and nets part 0 (Auyeung) [link](http://youtu.be/uan1Cdl0kA0)
+
+int sqlite3_threadsafe(void);
+returns zero if and only if SQLite was compiled 
+
 
 
 #wk06
