@@ -12,8 +12,22 @@ gschem basics: add symbols and nets part 0 (Auyeung) [link](http://youtu.be/uan1
 int sqlite3_threadsafe(void);
 returns zero if and only if SQLite was compiled 
 
-《啊哈！算法》扫描版
-《图灵的秘密：他的生平、思想及论文解读》扫描版
+1. 廠測使用ICE/ICD來進行，完全不需考慮功能韌體 (Peter建議，手機廠是如此作的)
+2. flash內完全不含廠測韌體，在測試進行前才用openssh將韌體殖入待測物
+3. flash內規劃廠測專用的partition來放置廠測韌體，由uboot來偵測GPIO並決定要從哪個partition開機
+你的作法1可能導致工時的增加，且廠測也被用在RMA維修站和出貨前燒機後的檢驗。方法2可以使用openssh，我們的韌體都有內建ssh server，但需用後門才能打開。每個方法都有其優缺點，我們再討論。
+
+1.	做一個特別的廠測image（含有廠測程式）。測完，燒進出廠image，洗掉廠測image。
+2.	rcS跑一段小的測試code（跟程式擺一起）。若RJ-11是否插入，則從TFTP下載測試程式到RAM disk，開始廠測；若否，則正常啟動。
+
+
+廠測程式擺flash，跟程式擺一起。我去問了其他同事，C875, CV910, C285, ER130皆此作法。
+
+生產測試的考量
+
+板子預留治具可用的接點、測試點：可以擺單面、絕不擺雙面；可省則省，越少越好。
+
+燒錄時間太長，則可能請廠商燒好再打到板子上，避免佔用產線燒錄。
 
 
 #wk06
