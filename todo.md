@@ -21,6 +21,7 @@ USB B Connector: symbol and footprint [line](http://openhardware.ro/geda-library
 
 燒錄時間太長，則可能請廠商燒好再打到板子上，避免佔用產線燒錄。
 
+RJ11和RJ45水晶头对应的4P2C, 4P4C, 6P2C, 6P4C, 6P6C, P和C是什么意思? P，是Position的简称，即位置，水晶头前端的凹槽个数；C，是Contact的简称，即触点，也就是我们看到的黄亮亮的金属触点。[link](http://www.pinzhi.org/thread-9318-1-1.html)
 
 #wk07 08 ~ 14 February
 
