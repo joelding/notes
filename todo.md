@@ -10,6 +10,7 @@
 
 劉幸枝（衛理神學院教師）《從新約看家庭》全家事奉主─西庇太這一家 [link](http://www.ct.org.tw/news/detail/2015-00611) 基督教論壇報 2015-03-01
 
+Linux From Scratch Version 7.0 [link](http://www.linuxfromscratch.org/lfs/view/7.0/index.html)
 
 #wk09
 
