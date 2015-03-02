@@ -18,16 +18,7 @@ Linux From Scratch Version 7.0 [link](http://www.linuxfromscratch.org/lfs/view/7
 
 USB B Connector: symbol and footprint [line](http://openhardware.ro/geda-library/)
 
-1. 廠測使用ICE/ICD來進行，完全不需考慮功能韌體 (Peter建議，手機廠是如此作的)
-2. flash內完全不含廠測韌體，在測試進行前才用openssh將韌體殖入待測物
-3. flash內規劃廠測專用的partition來放置廠測韌體，由uboot來偵測GPIO並決定要從哪個partition開機
-你的作法1可能導致工時的增加，且廠測也被用在RMA維修站和出貨前燒機後的檢驗。方法2可以使用openssh，我們的韌體都有內建ssh server，但需用後門才能打開。每個方法都有其優缺點，我們再討論。
 
-1.	做一個特別的廠測image（含有廠測程式）。測完，燒進出廠image，洗掉廠測image。
-2.	rcS跑一段小的測試code（跟程式擺一起）。若RJ-11是否插入，則從TFTP下載測試程式到RAM disk，開始廠測；若否，則正常啟動。
-
-
-廠測程式擺flash，跟程式擺一起。我去問了其他同事，C875, CV910, C285, ER130皆此作法。
 
 生產測試的考量
 
