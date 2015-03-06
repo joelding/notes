@@ -1,3 +1,20 @@
+#RS232
+
+canonical(正規模式)和non-canonical(非正規模式)。
+正規模式又稱為cooked模式。終端設備會處理特殊字元，且會以一次一列的方式將輸入傳給應用程式。例如Linux的shell指令。
+非正規模式又稱為raw模式。終端設備不會處理特殊字元，且會以一次一個字元的方式將輸入傳給應用程式。例如在Linux使用vim編輯程式。
+
+[link](http://blog.xuite.net/uwlib_mud/twblog/108242774-Linux+RS-232+%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88)
+
+
+#Writing Windows Programs with GTK+ and Qt
+1. Install MinGW: go to MinGW website; find download; get "mingw-get-setup.exe" and execute.
+2. Select "Basic Setup" package. Select mingw32-base and mingw32-gcc-g++ from the pacages.
+3. Add "install_path\MinGW\bin" to PATH.
+4. In Windows cmd, type "gcc -v" to test.
+5. 
+
+
 #wk10
 
 耶穌呼召的門徒當中，唯獨雅各與約翰被提到時，有十一次被強調是「西庇太的兒子」。可見在早期教會中，西庇太這一家是信徒周知的家庭。西庇太這一家住在加利利海沿岸的漁村伯賽大，意思是指「捕魚之家」（約翰福音一章14節）。聖經記錄他們全家除父親西庇太之外，還有母親撒羅米以及兩個兒子雅各和約翰（馬可福音一章19-20節，十五章40節，馬太福音廿七章56節）。根據馬可福音一章20節記載，西庇太擁有自己的漁船，可見他的經濟條件還不錯；他還僱用了雇工幫忙捕魚，因此西庇太的捕魚事業應該具備一定的規模。
