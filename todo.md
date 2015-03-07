@@ -1,3 +1,7 @@
+MIPS Creator CI20开发平台是采用君正JZ4780芯片，由Imagination公司负责设计的软硬件开源平台。
+Ingenic Semiconductor
+http://www.ingenic.cn
+
 #RS232
 
 canonical(正規模式)和non-canonical(非正規模式)。
