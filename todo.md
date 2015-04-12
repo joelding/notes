@@ -1,3 +1,4 @@
+http://goods.ruten.com.tw/item/show?21405112751885
 #RS232
 
 canonical(正規模式)和non-canonical(非正規模式)。
