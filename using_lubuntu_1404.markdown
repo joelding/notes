@@ -14,3 +14,7 @@ Q: How to setup system-wide proxy?
 A: Run the scripts provided by the reference. And reboot.
 
 [ref](http://askubuntu.com/questions/150210/how-do-i-set-systemwide-proxy-servers-in-xubuntu-lubuntu-or-ubuntu-studio)
+
+Q: How to use github behind a proxy in the company?
+
+A: export https_proxy=proxy.avermedia.com:8080.
