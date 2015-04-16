@@ -18,3 +18,5 @@ A: Run the scripts provided by the reference. And reboot.
 Q: How to use github behind a proxy in the company?
 
 A: export https_proxy=proxy.avermedia.com:8080.
+
+[ref](http://stackoverflow.com/questions/5529218/how-to-use-git-behind-a-proxy)
