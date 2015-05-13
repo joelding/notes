@@ -1,1 +1,8 @@
-escape_len.c : a test program telling how many characters is "\\\"".
+escape_len.c	: 2015-04-17
+	a test program telling how many characters is "\\\"".
+
+getopt.c	: 2015-04-28
+	an exercise program to practice getopt()
+
+exec.c		: 2015-05-13
+	an exercise program to practice exec() family of functions.
