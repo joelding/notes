@@ -1,0 +1,7 @@
+BeagleBone Development Board 
+http://www.ti.com/tool/beaglebn
+BeagleBone Black Development Board
+http://www.ti.com/tool/beaglebk
+
+Download Standalone Linaro Toolchain - Linaro GCC 4.7 2013.03 hard-float toolchain: 
+$ wget https://launchpad.net/linaro-toolchain-binaries/trunk/2013.03/+download/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux.tar.bz2
