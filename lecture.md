@@ -16,6 +16,20 @@ http://www.sharecourse.net/sharecourse/course/content/about/475
 本課程時間為 6 小時, 為期兩周 (每周 三小時), 內容包含
 
 1. IPv6 新一代網際網路通訊協議與物聯網應用介紹
+IPv6 隨插即用方法-exercise
+1.11. 下列哪一個 IPv6 群播網址是用來傳送封包給連接網路上所有的主機 ?
+FF02::1 [V]
+FF02::2
+FFFF::1
+ef80::1
+ef80::2
+
+1.12. 下列哪一個 IPv6 群播網址是用來傳送封包給連接網路上所有的路由器 ?
+FF02::1
+ef80::1
+FFFF::1
+FF02::2 [V]
+ef80::2
 
 2. IPv6 通訊協議與運作原理
 
