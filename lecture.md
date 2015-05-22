@@ -31,6 +31,22 @@ FFFF::1
 FF02::2 [V]
 ef80::2
 
+IPv6 傳輸路徑選擇-exercise
+
+1.13.  假設主機 A, B 在相同IPv6 區域網路或子網路上而且 A 知道 B 的 IPv6 網址. 請問主機 A 要如何知道主機B 的網卡位址 (MAC address) ?
+主機 A 可以使用 ARP (Address Resolution Protocol) 廣播封包去詢問主機 B 的 MAC address.
+主機 A 可以使用 ARPv6 廣播封包去詢問主機 B 的 MAC address.
+主機 A 可以使用 ICMPv6 的 Neighbor Solicitation 廣播封包去詢問主機 B 的 MAC address.
+主機 A 可以使用 ICMPv6 的 Neighbor Solicitation 群播封包去詢問主機 B 的 MAC address. [V]
+主機 A 可以使用 ICMPv6 的 Router Solicitation 廣播封包請 router 幫忙詢問主機 B 的 MAC address.
+
+1.14. 假設主機 A 想要傳送封包給主機 B, 請問主機 A 如何知道主機是否位於相同的子網路內 ? 
+主機 A 可以將其 IPv6 網址跟 Subnet mask 進行 logical AND 的運算, 檢查其結果是否與主機 B 的IPv6 網址跟 Subnet mask 進行 logical AND 運算結果相同. 如果相同表示他們是在相同的子網路內.
+主機 A 可以將其 IPv6 網址跟 Subnet mask 進行 logical AND 的運算, 檢查其結果是否與主機 B 的IPv6 網址跟 Subnet mask 進行 logical AND 運算結果相同. 如果不相同表示他們是在相同的子網路內.
+主機 A 可以檢查主機 B 的 IPv6 網址是否與主機 A 由路由器獲得的任何一個 prefix/x 相符合. 如果相符合表示他們是在相同的子網路內. [V]
+主機 A 可以檢查主機 B 的 IPv6 網址是否與主機 A 由路由器獲得的任何一個 prefix/x 相符合. 如果不符合表示他們是在相同的子網路內.
+主機 A 可以檢查主機 B 的 IPv6 網址是否與主機 A 由路由器獲得的任何一個 prefix/x 相符合. 如果不符合表示他們不在相同的子網路內. [V]
+
 2. IPv6 通訊協議與運作原理
 
     2.1 IPv6 與 IPv4 特色比較
