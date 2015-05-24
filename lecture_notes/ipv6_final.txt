@@ -139,7 +139,7 @@ f=
 g=	
 h=	
 
-11-15	be,239 192 0 2,bce,ad,a=1 b=4 c=2 d=4 e=1 f=e g=1 h=f
+11-15	be,239 192 0 2,bce,ad,a=1 b=4 c=1 d=8 e=1 f=e g=1 h=f
 
  【 複選題 】
 
@@ -186,7 +186,7 @@ h=
 	(d)在 IPv4 網路上的 IPv6 隔離主機直接透過 DNS domain name server 查詢出 tunnel servers 的 IPv4 網址後, 直接跟其中一個 tunnel server 建立隧道.
 	(e) Tunnel broker 是自動化的隧道代建服務, IPv6 隔離主機不需要安裝任何的 client 端軟體. 
 
-16-20	ac,cd,c,ade,ac
+16-20	ac,cd,c,acd,ac
 
  【 單選題 】
 
@@ -280,7 +280,7 @@ h=
 	(d) CLAT 是 stateless 轉換, 因為每個封包都可以獨立轉換
 	(e) CLAT 是 stateful 轉換, 因為封包轉換需要去查詢 IPv4 網址與 IPv6 網址對照表
 
-26-30	ad,ae,a,a,abd
+26-30	ad,ae,a,e,abd
 
  【 複選題 】
 
