@@ -1,0 +1,5 @@
+hydrogen/
+
+An advanced drum machine software for GNU/Linux under GPLv2 license.
+
+$ git clone https://github.com/hydrogen-music/hydrogen.git
