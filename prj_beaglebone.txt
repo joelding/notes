@@ -1,3 +1,11 @@
 /***********************************
 * prj_beaglebone.txt: a notebook of using BeagleBone/BeagleBoneBlack
 **********************************/
+
+/*
+* install processor SDK 
+*/
+
+Go to "PROCESSOR-SDK-LINUX-AM335X Product Downloads" (link: http://software-dl.ti.com/sitara_linux/esd/processor-sdk/PROCESSOR-SDK-LINUX-AM335X/latest/index_FDS.html). This version is 01.00.00, published on 2015/04/10 with Linux kernel v3.14.26.
+
+https://e2e.ti.com/support/arm/sitara_arm/f/791/t/335816
