@@ -1,0 +1,20 @@
+$ ### 2015-05-04 ###
+$ sudo apt-get update && sudo apt-get upgrade
+$ sudo apt-get install unattended-upgrades
+$ sudo dpkg-reconfigure -plow unattended-upgrades
+$ sudo unattended-upgrade
+$
+$ sudo apt-get install build-essential g++ vim git
+$
+$ sudo apt-get install virtualbox
+$ wget http://dlc-cdn.sun.com/virtualbox/4.3.10/Oracle_VM_VirtualBox_Extension_Pack-4.3.10-93012.vbox-extpack
+$ sudo adduser $USER vboxusers # logout/login
+$ # sudo usermod -G vboxusers -a $USER
+$
+$ sudo apt-get install picocom minicom
+$ sudo adduser $USER dialout # logout/login
+$ sudo apt-get install putty
+$
+$ sudo apt-get install vlc # VLC
+$ sudo apt-get install iperf
+$ iperf -s -P 0 -i 1 -p 5001 -f M
