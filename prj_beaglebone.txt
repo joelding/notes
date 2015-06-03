@@ -8,4 +8,13 @@
 
 Go to "PROCESSOR-SDK-LINUX-AM335X Product Downloads" (link: http://software-dl.ti.com/sitara_linux/esd/processor-sdk/PROCESSOR-SDK-LINUX-AM335X/latest/index_FDS.html). This version is 01.00.00, published on 2015/04/10 with Linux kernel v3.14.26.
 
-https://e2e.ti.com/support/arm/sitara_arm/f/791/t/335816
+To install on 64 bit Ubuntu 14.04 LTS, run
+$ sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+to replace the ia32-libs library used in previous versions of Ubuntu.
+reference: http://processors.wiki.ti.com/index.php/Processor_SDK_Linux_64_Bit_Ubuntu_Support
+reference: https://e2e.ti.com/support/arm/sitara_arm/f/791/t/335816
+
+To install, run
+$ chmod +x ti-processor-sdk-linux-am335x-evm-01.00.00.00-Linux-x86-Install.bin
+$ ./ti-processor-sdk-linux-am335x-evm-01.00.00.00-Linux-x86-Install.bin --mode text 
+Default install to /home/<username>/ti-processor-sdk-linux-am335x-evm-01.00.00.00. With --prefix <prefix> to install to a destination folder.
