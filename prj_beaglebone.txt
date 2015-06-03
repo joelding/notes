@@ -1,0 +1,3 @@
+/***********************************
+* prj_beaglebone.txt: a notebook of using BeagleBone/BeagleBoneBlack
+**********************************/
