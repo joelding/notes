@@ -1,0 +1,316 @@
+RFC1933 隧道機制-exercise
+
+2.1 RFC1933 定義了 Configured tunnel. 那列那些對於 Configured tunnel 的描述是正確的?
+X	(a) Configured tunnel 的兩端終點 (endpoints) 必須是 dual stack 設備
+	(b) Configured tunnel 的兩端終點位置系統會自動設定
+	(c) Configured tunnel 的兩端終點位址是 IPv6 位址
+X	(d) Configured tunnel 的兩端終點位址是 IPv4 位址
+	(e) Configured tunnel 的目的是在 IPv6 網路上傳送 IPv4 封包
+
+ 	
+
+2.2 下列哪些IPv6 網址是所謂的 ”IPv4 相容IPv6 網址” (IPv4 compatible IPv6 address) ?
+	(a) fe80::140.114.76.1
+	(b) 2001:: 140.114.76.1
+X	(c) ::140.114.76.1
+X	(d) ::140.114.76.2
+	(e) fe80::2A5E:7E6F:2B02
+
+ 2.3 RFC1933 定義了 Automatic tunnel. 那列那些對於 automatic tunnel 的描述是正確的?
+X	(a) 如果目的地主機的 IPv6 網址是 IPv4 相容網址, 則 router 會自動建立一條由 router 直接到主機 IPv4 網址的 tunnel.
+	(b) 如果目的地主機的 IPv6 網址是 IPv4 相容網址, 則傳送端 (sender) 會自動建立一條直接到主機 IPv4 網址的 tunnel.
+	(c) 如果目的地主機的 IPv6 網址是 IPv4 相容網址, 則 router 會自動建立一條直接到主機 IPv6 網址的 tunnel.
+	(b) 如果目的地主機的 IPv6 網址是 IPv4 相容網址, 則傳送端 (sender) 會自動建立一條直接到主機 IPv6 網址的 tunnel.
+	(e) 無論目的地主機的 IPv6 網址是否與 IPv4 相容, router 都會自動建立一條直接到主機 IPv6 網址的 tunnel.
+
+6over4 隧道機制-exercise
+
+2.4. 下列哪些有關 6over4 機制的描述是正確的?
+X	(a) 6over4 機制是要讓連接在 IPv4 網路上的 IPv6 隔離主機 (無直接連接任何 IPv6 router) 可以互相通訊.
+X	(b) IPv6 主機必須是 IPv4/IPv6 dual stack 主機
+X	(c) 6over4 機制使用 IPv4 群播 (multicast) 功能將 IPv4 網路視為 IPv6 主機間的虛擬網路.
+	(d) 6over4 機制使用 IPv4 廣播 (broadcast) 功能將 IPv4 網路視為 IPv6 主機間的虛擬網路.
+X	(e) IPv6 主機使用 IGMP 協議來加入群播群組 (multicast group).
+
+ 2.5. 下列哪些有關 6over4 機制的描述是正確的?
+X	(a) IPv6 主機的 IPv6 網址是自行產生的 link_local 網址
+	(b) IPv6 主機的 IPv6 網址是由 IPv6 router 配置的, 這樣才能與互聯網連通.
+X	(c) 假設 IPv6 主機的 IPv4 網址為 1.1.2.2, 則其 IPv6 網址為 fe80::0101:0202
+	(d) 假設 IPv6 主機的 IPv4 網址為 1.1.2.2, 則其 IPv6 網址為 ::1.1.2.2
+	(e) 假設 IPv6 主機的 IPv4 網址為 1.1.2.2, 則其 IPv6 網址為 fe80::0011:0022
+
+6over4 multicast-exercise
+
+ 2.6. 下列哪些有關 6over4 機制在支援 IPv6 multicast方面的描述是正確的? 假設 IPv6 主機擬送出一個封包尋找所有 routers, 此封包的 destination IPv6 address = FF02::2.
+X	(a) 此 IPv6 multicast 封包會被包成 (encapsulated) 一個 IPv4 multicast 封包來傳送.
+	(b) 此 IPv6 multicast 封包會被轉換成 (header translation) 一個 IPv4 multicast 封包來傳送.
+X	(c) 此 IPv6 multicast 封包會被包成 (encapsulated) 一個 IPv4 multicast 封包來傳送. 而且其 IPv4 destination address = 239.192.0.2.
+	(d) 此 IPv6 multicast 封包會被轉換成 (header translation) 一個IPv4 multicast 封包來傳送, 而且其 IPv4 destination address = 239.192.0.2.
+	(e) 此 IPv6 multicast 會被包成 (encapsulated) 一個 IPv4 multicast 封包來傳送. 而且其 IPv4 destination address = IPv6 主機利用 IGMP 加入的任何一個 IPv6 群組位址.
+	
+2.7. 假設 IPv6 主機擬送出一個 IPv6 封包尋找所有連接的 neighbors, 此封包的 destination address = FF02::1. 在 6over4 的機制下假設此封包被送進 IPv4 網路中的 destination IPv4 address = a.b.c.d
+239	a =
+192	b =
+0	c =
+1	d =
+
+6to4 隧道機制-exercise
+
+ 2.8. 下列哪些有關 6to4 機制的描述是正確的?
+	(a) 6to4 機制是要讓連接在 IPv4 網路上的 IPv6 隔離主機 (無直接連接任何 IPv6 router) 可以互相通訊.
+X	(b) 6to4 機制使用來將隔離的 IPv6 網路透過 IPv4 網路連接起來, 而且會在 IPv4 網路上自動建立隧道 (tunnel).
+	(c) 6to4 機制將 IPv4 網路視為 IPv6 主機間的群播虛擬網路.
+X	(d) 6to4 機制將 IPv4 網路視為一個點對點的鏈結層 (link layer)網路.
+	(e) 6to4 機制使用來將隔離的 IPv6 網路透過 IPv4 網路連接起來, 而且在 IPv4 網路上不需使用隧道 (tunnel).
+
+ 	
+
+2.9.  6to4 機制如何在 IPv4 網路上自動建立隧道 (tunnel) ?
+	(a) 由網路管理員依據網路架構建立隧道出入口
+X	(b) IPv6 目的地網址嵌入連接目地的 IPv6 主機的 6to4 路由器的 IPv4 網址, 6to4 路由器根據 IPv6 目的地網址得知隧道出口的IPv4 網址.
+X	(c) IPv6 原始網址嵌入連接原始 IPv6 主機的 6to4 路由器的 IPv4 網址, 6to4 路由器根據 IPv6 原始網址得知隧道入口的IPv4 網址.
+	(d) IPv6 目的地網址嵌入連接目地的 IPv6 主機的 6to4 路由器的 IPv4 網址, 6to4 路由器根據 IPv6 目的地網址得知隧道入口的IPv4 網址.
+	(e) IPv6 原始網址嵌入連接原始 IPv6 主機的 6to4 路由器的 IPv4 網址, 6to4 路由器根據 IPv6 原始網址得知隧道出口的IPv4 網址.
+
+ 	
+
+2.10.  下列哪些 IPv6 網址是6to4 機制可能使用的網址 ?
+	(a) fe80::1
+	(b) ff02::2
+X	(c) 2002:c0a8:0101::1
+	(d) ::192.168.2.3
+X	(e) 2002:c0a8:201:2::2
+
+ 2.11. 如果將 IPv4 網址 192.168.3.1 嵌入 IPv6 網址中, 其對應的 IPv6 網址為 abcd:efgh, 則 (英文字母請用小寫)
+
+a =  ____,  b = ______, c = _____ d = ______ e = _______, f =_______, g =_____, h =______
+c	a =
+0	b =
+a	c =
+8	d =
+0	e =
+3	f =
+0	g =
+1	h = 
+
+ 2.12. 如果將 IPv4 網址 10.8.14.15 嵌入 IPv6 網址中, 其對應的 IPv6 網址為 abcd:efgh, 則 (英文字母請用小寫)
+
+a =  ____,  b = _____, c = _____ d = ______ e = _______, f =_______, g =_____, h =______
+0	a =
+a	b =
+0	c =
+8	d =
+0	e =
+e	f =
+0	g =
+f	h = 
+
+ISATAP 隧道機制-exercise
+
+ 2.13. 下列哪些有關 ISATAP 機制的描述是正確的?
+	(a) ISATAP 是要讓連接在 IPv4 網路上的 IPv6 隔離主機 (無直接連接任何 IPv6 router) 可以互相通訊.
+X	(b) ISATAP 是要讓連接在 IPv4 網路上的 dual-stack 主機可以互相通訊
+	(c) ISATAP 是用來將隔離的 IPv6 網路透過 IPv4 網路連接起來, 而且會在 IPv4 網路上自動建立隧道 (tunnel).
+X	(d) ISATAP 將 IPv4 網路視為一個鏈結層 (link layer)網路.
+X	(e) ISATAP 支援自動隧道 (automatic tunneling) 機制.
+
+ 2.14. 下列哪些 IPv6 網址是ISATAP 機制可能使用的網址 ?
+X	(a) fe80::5efe:c080:0101
+	(b) ff02::2
+	(c) 2002:c0a8:0101::1
+X	(d) fe80::0:0:5efe:c080:0102
+	(e) 2002:c0a8:201:2::2
+
+teredo 隧道機制-exercise
+
+ 2.15. 下列哪些有關 teredo 機制的描述是正確的?
+	(a) Teredo 是要讓連接在 IPv4 網路上的 IPv6 隔離主機可以互相通訊.
+	(b) Teredo 是要讓連接在 IPv4 網路上的 dual-stack 主機可以互相通訊.
+	(c) Teredo 是用來將隔離的 IPv6 網路透過 IPv4 網路連接起來, 而且會在 IPv4 網路上自動建立隧道 (tunnel).
+X	(d) Teredo 將位於 IPv4 私有網路 (private network) 的 IPv6 主機以穿過 NAT 的隧道方式跟遠端的 IPv6 網路連接.
+	(e) Teredo 將位於 IPv4 網路上的 IPv6 主機以穿過 NAT 的隧道方式跟遠端的 IPv6 網路連接.
+
+ 2.16 下列哪個隧道方法是 teredo 機制的隧道方法 ?
+	(a) IPv6 in IPv4
+	(b) IPv4 in IPv6
+X	(c) IPv6 in UDP in IPv4
+	(d) IPv4 in UDP in IPv6
+	(e) IPv6 in IPv4 in UDP 
+
+ 2.17. 下列哪些 IPv6 網址是teredo 機制可能使用的網址 ?
+	(a) fe80::5efe:c080:0101
+	(b) ff02::2
+X	(c) 2001:0000:c0a8:0101::1
+	(d) fe80::0:0:5efe:c080:0102
+X	(e) 2001:0000:c0a8:201:2::2
+
+ 2.18. Teredo 機制下位於 IPv4私有網路上IPv6 主機的 IPv6 網址包含下列哪些資訊
+	(a) IPv6 主機的私有 IPv4 網址 (private IPv4 address)
+X	(b) 連接 IPv6 主機的 NAT 的公有 IPv4 網址 (public IPv4 address)
+X	(c) IPv6 主機的 UDP port number
+	(d) IPv6 主機的 TCP port number
+X	(e) 2001:0000/32 prefix
+
+tunnel broker 隧道代理-exercise
+
+ 2.19. 下列哪些有關 Tunnel Broker (TB) 機制的描述是正確的?
+X	(a) TB　是要讓連接在 IPv4 網路上的 IPv6 隔離主機可以連上遠端的IPv6 網路.
+X	(b) 使用 TB 時, IPv4 網路上的 IPv6 主機必須是 dual-stack 主機.
+	(c) TB 是用來將隔離的 IPv6 網路透過 IPv4 網路連接起來, 而且由 IPv6 主機在 IPv4 網路上建立隧道 (tunnel).
+	(d) TB 將位於 IPv4 私有網路 (private network) 的 IPv6 主機以穿過 NAT 的隧道方式跟遠端的 IPv6 網路連接.
+X	(e) 使用 TB 時, IPv4 網路上的 IPv6 主機的 IPv4 網址必須是公有網址 (public IP address). 
+
+ 2.20. 下列哪些有關 Tunnel Broker (TB) 機制的運作模式描述是正確的?
+	(a) 在 IPv4 網路上的 IPv6 隔離主機向 tunnel broker 詢問 tunnel servers 的 IPv4 網址後, 直接跟其中一個 tunnel server 建立隧道.
+X	(b) 在 IPv4 網路上的 IPv6 隔離主機向 tunnel broker 提出建立隧道需求, 由 tunnel broker 建立(設定)由 IPv6 隔離主機到其中一個 tunnel server 的隧道.
+	(c) 在 IPv4 網路上的 IPv6 隔離主機直接透過 DNS domain name server 查詢出 tunnel servers 的 IPv4 網址後, 直接跟其中一個 tunnel server 建立隧道.
+X	(d) 要使用 tunnel broker 的服務, IPv6 隔離主機通常需要安裝一個 tunnel broker 的 client 端軟體.
+	(e) Tunnel broker 是自動化的隧道代建服務, IPv6 隔離主機不需要安裝任何的 client 端軟體. 
+
+SIIT 轉換機制-exercise
+
+ 2.21. 下列哪些有關 SIIT (Stateless IP/ICMP Translation) 轉換機制的描述是正確的?
+X	(a) SIIT 將 IPv6 封包的表頭 (IPv6 header) 轉換成 IPv4 封包的表頭 (IPv4 header), 或是反向.
+	(b) 使用 SIIT 時, IPv4 網路上的 IPv6 主機必須是 dual-stack 主機.
+X	(c) SIIT　讓沒有分配到永久 IPv4 網址的 IPv6 主機與 IPv4 only主機通訊.
+X	(d) 使用 SIIT 時, IPv6 主機可以是 IPv6 only 主機.
+X	(e) SIIT 將 ICMPv6 封包的表頭 (header) 轉換成 ICMPv4 封包的表頭 (IPv4 header), 或是反向.
+
+ 2.22. 下列哪些有關 SIIT (Stateless IP/ICMP Translation) 轉換機制的描述是正確的?
+	(a) SIIT 在轉換封包的表頭 (header) 時會參考過去相關封包的轉換資料.
+X	(b) SIIT 在轉換封包的表頭 (header) 時只依據該封包的 header 內容來轉換, 與過去封包的轉換資料無關聯.
+X	(c) SIIT　在轉換封包的表頭 (header) 時為了維持 TCP/UDP header 的檢查碼 (checksum) 的正確性, IPv6 端的網址需使用特殊具轉性 (translatable) 的網址.
+	(d) SIIT　在轉換封包的表頭 (header) 時不需顧慮 TCP/UDP header 的檢查碼 (checksum) 的正確性.
+	(e) SIIT 跟 NAT 類似, 會紀錄轉換的相關資料, 以便反向回來的封包可以查詢此資料, 並完成正確轉換.
+
+NATPT 轉換機制-exercise
+
+ 2.23. 下列哪些有關 NATPT 轉換機制的描述是正確的?
+X	(a) NATPT 與傳統 NAT 類似, 都是進行網址的轉換
+X	(b) NATPT 將 IPv6 網址轉換成 IPv4 網址, 或是反向.
+	(c) NATPT 不需具備 IPv4 網址池 (pool of IPv4 addresses).
+	(d) NATPT 屬於 stateless 轉換機制, 轉換網址時只依據該封包的網址來轉換, 與過去封包的轉換資料無關聯.
+X	(e) NATPT 必須搭配 DNSv6 server 與 DNSv4 server 的網址對照表.
+
+2.24. 下列哪些有關 NATPT 轉換機制系統的描述是正確的?
+X	(a) NATPT 轉換器是連接 IPv4-only 網路與 IPv6-only 網路的設備
+	(b) 透過 NATPT 轉換封包的主機可以是 IPv4/IPv6 dual-stack 主機.
+X	(c) 一對 IPv6 主機與 IPv4 主機之間屬於同一連線的雙向封包必須經過同一個 NATPT 轉換器
+	(d) 一對 IPv6 主機與 IPv4 主機之間屬於同一連線的雙向封包可經過不同的 NATPT 轉換器.
+X	(e) NATPT 轉換器必須具備配置 IPv6 網址 prefix (::/96) 的能力
+
+Reverse Proxy 轉換機制-exercise
+
+ 2.25. 下列哪些有關 Reverse Proxy 機制的描述是正確的?
+	(a) Client 可以直接跟 Server 直接建立連線, reverse proxy 在線路中間扮演內容快取儲存 (catch) 的角色
+	(b) Reverse proxy 接受來自 client 的連線需求, 並將連線需求直接轉給建置在內部網路的伺服器 servers. Reverse proxy 與 client 之間沒有建立連線.
+X	(c) Reverse proxy 接受來自 client 的連線需求, 並與該 client 建立連線. Reverse proxy 再與 Server 建立第二條連線.
+X	(d) Reverse proxy 有保護 servers 的優點, 因為 clients 無法知道 servers 的詳細資料如網址等等
+X	(e) Reverse proxy 有負載平衡的優點, 可以將來是 clients 的需求負載平均分配給 servers.
+
+2.26. 下列哪些有關 Reverse Proxy 用在 IPv6轉換機制的描述是正確的?
+X	(a) Reverse proxy 用來連接位於 IPv6 網路的 IPv6 主機 (或 IPv4/IPv6 主機) 與位於 IPv4 網路的 IPv4 服務器.
+	(b) Reverse proxy 屬於 stateless 技術, 在轉換 IPv6 與 IPv4 網址時只依據該封包的 header 內容來轉換, 與過去封包的轉換資料無關聯.
+X	(c) IPv4 網路上的 web server 是 IPv4-only 服務器, 且在 DNS 需要有兩個紀錄. 一個是其 IPv4 網址, 一個是 reverse proxy 的 IPv6 網址.
+	(d) 在 reverse proxy 轉換的過程中, 只需要使用到 reserve proxy 在 IPv6 網路上的 IPv6 網址, 不需要使用到 reserve proxy 在 IPv4 網路上的 IPv4 網址.
+	(e) IPv4 網路上的 web server 是 IPv4/IPv6 dual-stack 服務器, 且在 DNS 需要有兩個紀錄. 一個是其 IPv4 網址, 一個是其 IPv6 網址.
+
+ 2.27. 下列哪些有關 Reverse Proxy 用在 IPv6轉換機制的優缺點是正確的?
+	(a) Reverse proxy 建置過於複雜, IPv4 web server 需要配合調整許多設定
+X	(b) IPv4 web server 需要異動的地方很少, 可以快速地提供 IPv6 連線服務
+X	(c) 對 IPv4 web server 來說, 會看到許多建立連線需求都來自 reverse proxy. 較不易區隔與分辨終端使用者.
+X	(d) 並非所有的協定 (protocols) 都可以透過 reverse proxy 來轉換, 對於未來擴展性較不容易
+	(e) Reverse proxy 可以快速地提供 IPv6 主機與現有 IPv4 互聯網伺服器的連線服務, 因此是一個適合長期佈建使用的轉換機制.
+
+NAT64 轉換機制-exercise
+
+ 2.28. 下列哪些有關 NAT64 轉換機制的描述是正確的?
+	(a) NAT64 主要是讓位於 IPv4 網路上的 IPv4 主機可以跟位於 IPv6 網路上的 IPv6 伺服器或主機聯繫.
+X	(b) NAT64 轉換器將來自 IPv6 主機的連線需求直接轉給建置在 IPv4 網路的 IPv4 伺服器. IPv6 主機與 NAT64 轉換器之間沒有建立連線.
+	(c) NAT64 轉換器接受來自 IPv6 主機的連線需求, 並與該 IPv6 主機建立連線. NAT64 轉換器再與伺服器建立第二條連線.
+X	(d) IPv6 主機送出的 IPv6 封包中的目的地 IPv6 網址 (destination IPv6 address) 需嵌入位於 IPv4 網路上 IPv4 伺服器的 IPv4 網址..
+	(e) NAT64 轉換器在 IPv6 與 IPv4 封包轉換的過程中不需要建立一個IPv6 與 IPv4 網址對照表
+
+ 2.29. 在 NAT64 轉換機制下, 當 IPv6 主機送出第一個 IPv6 封包到 NAT64 轉換器時, NAT64 轉換器需要建立一個 IPv6網址與 IPv4 網址的對照表. 下列有關對照表的描述那些是錯誤的 ?
+	(a) 可人工設定, 由管理人員事先設定好.
+	(b) 可自動設定, 由 NAT64 轉換器依據收到 IPv6 封包的 IPv6 網址來設定
+X	(c) 人工設定因為已經事先都設定好, 轉換時是屬於 stateful 轉換
+X	(d) 自動設定因為是臨時建立對照關係, 轉換時是屬於 stateless 轉換
+X	(e) 無論人工設定或是自動設定, 轉換時是屬於 stateful 轉換
+
+ 2.30. NAT64 機制使用的 IPv6 網址是所謂嵌入 IPv4 網址的IPv6 網址. 請問IPv6 網址所嵌入 IPv4 網址的是誰的網址 ?
+	(a) NAT64 轉換器在 IPv4 網路上的網址.
+	(b) NAT64 轉換器在 IPv6 網路上的網址
+	(c) DNS64 伺服器在 IPv4 網路上的網址
+	(d) IPv6 主機的 IPv4 網址
+X	(e) IPv4 伺服器的 IPv4 網址.
+
+464XLAT轉換機制1-exercise
+
+ 2.31. 下列哪些有關 464XLAT 轉換機制的描述是正確的?
+	(a) 464XLAT 主要是讓位於 IPv6 網路上的 IPv6 主機可以跟位於 IPv4 網路上的 IPv4 伺服器或主機聯繫.
+X	(b) 464XLAT主要是讓位於私有網路上的 IPv4 主機可以透過 IPv6 網路跟位於 IPv4 網路上的 IPv4 伺服器或主機聯繫.
+	(c) 464XLAT主要是讓位於私有網路上的 IPv4 主機可以跟 IPv6 網路上的 IPv6 伺服器或主機聯繫.
+	(d) 464XLAT主要是讓位於私有網路上的 IPv6 主機可以透過 IPv4 網路跟位於 IPv6 網路上的 IPv6 伺服器或主機聯繫.
+	(e) 464XLAT主要是讓位於公有網路上的 IPv4 主機可以透過 IPv6 網路跟位於 IPv4 私有網路上的 IPv4 伺服器或主機聯繫.
+
+ 2.32.  464XLAT 轉換機制包含用戶端轉換(CLAT) 以及服務端轉換(PLAT). 下列有關 PLAT 以及 CLAT 的描述那些是正確的 ? 
+X	(a) PLAT 是轉換 global IPv6 網址與 public IPv4 網址
+	(b) PLAT 是轉換 global IPv6 網址與 private IPv4 網址
+X	(c) CLAT 是轉換 private IPv4 網址與 global IPv6 網址
+	(d) CLAT 是轉換 public IPv4 網址與 global IPv6 網址
+	(e) CLAT 是轉換 private IPv4 網址與 private IPv6 網址
+
+ 2.33.  下列哪些有關464XLAT 轉換機制下的用戶端轉換 (CLAT) 描述是正確的 ? 
+X	(a) CLAT 在將 IPv4 網址轉換成 IPv6 網址的過程中直接將 IPv4 網址嵌入到轉換後的 IPv6 網址中
+	(b) CLAT 在將 IPv4 網址轉換成 IPv6 網址的過程中會建立一個 IPv4 網址與 IPv6 網址對照表
+X	(c) CLAT 在將 IPv6 網址轉換成 IPv4 網址的過程中直接由 IPv6 網址取出嵌入在裏頭的 IPv4 網址
+	(d) CLAT 是 stateful 轉換, 因為封包轉換需要去查詢 IPv4 網址與 IPv6 網址對照表
+X	(e) CLAT 是 stateless 轉換, 因為每個封包都可以獨立轉換
+
+ 2.34.  下列哪些有關464XLAT 轉換機制下的服務端轉換 (PLAT) 描述是正確的 ? 
+	(a) PLAT 在將 IPv6 起始網址轉換成 IPv4 起始網址的過程中直接由 IPv6 起始網址取出嵌入在裏頭的 IPv4 網址
+X	(b) PLAT 在將 IPv6 目的地網址轉換成 IPv4 目的地網址的過程中直接由 IPv6 目的地網址取出嵌入在裏頭的 IPv4 網址
+X	(c) PLAT 在將 IPv6 起始網址轉換成 IPv4 起始網址的過程中會建立一個 IPv4 網址對照表
+	(d) PLAT 在將 IPv6 目的地網址轉換成 IPv4 目的地網址的過程中會建立一個 IPv4 網址對照表
+	(e) PLAT 是 stateless 轉換, 因為每個封包都可以獨立轉換
+
+464XLAT轉換機制2-exercise
+
+ 2.35.  464XLAT 轉換機制下, 下列哪些網址轉換過程是正確的?
+X	(a) private IPv4 網址經由 CLAT 轉成 global IPv6 網址, 再經由 PLAT 轉換成 public IPv4 網址
+	(b) private IPv4 網址經由 PLAT 轉成 global IPv6 網址, 再經由 CLAT 轉換成 public IPv4 網址
+	(c) public IPv4 網址經由 CLAT 轉成 global IPv6 網址, 再經由 PLAT 轉換成 private IPv4 網址
+X	(d) public IPv4 網址經由 PLAT 轉成 global IPv6 網址, 再經由 CLAT 轉換成 private IPv4 網址
+	(e) private IPv4 網址經由 PLAT 轉成 global IPv6 網址, 再經由 CLAT 轉換成 private IPv4 網址
+
+ 2.36.  下列哪些有關464XLAT 轉換機制下的服務端轉換 (PLAT) 描述是正確的 ? 
+X	(a) PLAT 在將 IPv4 起始網址轉換成 IPv6 起始網址的過程中直接將IPv4 網址嵌入 IPv6 起始網址中
+	(b) PLAT 在將 IPv4 目的地網址轉換成 IPv6 目的地網址的過程中直接將IPv4 網址嵌入 IPv6 起始網址中
+	(c) PLAT 在將 IPv4 起始網址轉換成 IPv6 起始網址的過程中需要參考 IPv4 網址對照表
+X	(d) PLAT 在將 IPv4 目的地網址轉換成 IPv6 目的地網址的過程中需要參考 IPv4 網址對照表
+X	(e) PLAT 是 statelful 轉換, 因為不是每個封包都可以獨立轉換
+
+2.37.  下列哪些電信運營商或機構已經在有在進行464XLAT 轉換機制的試營運 ? 
+	(a) 中華電信
+	(b) 台灣大哥大
+	(c) 遠傳電信
+X	(d) 日本互聯網交換中心 (Japan Internet Exchange)
+X	(e) 美國 T-Mobile USA 
+
+ 2.38.  下列哪個轉換機制最適合智慧型手機等行動裝置使用 ? 
+	(a) NATPT
+	(b) NAT64
+	(c) SIIT
+X	(d) 464XLAT
+	(e) Reverse proxy 
+
+ 2.39.  下列哪個轉換機制因為過於複雜已被 IETF 標準小組建議不使用 ? 
+X	(a) NATPT
+	(b) NAT64
+	(c) SIIT
+	(d) 464XLAT
+	(e) Reverse proxy 
+
+
+
