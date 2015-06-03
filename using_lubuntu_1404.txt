@@ -1,5 +1,9 @@
-#using_lubuntu_1404.markdown
-Lubuntu 14.04 LTS are the used workstation (Intel Duo Core 1.86GHz, 2GB) in the company since year 2014. In this note, experiences of using Lubuntu 14.04 LTS are recorded.
+
+/*******************************************************************************
+* setup proxy for office desktop computer
+*******************************************************************************/
+
+Lubuntu 14.04 LTS are the used workstation (Intel Duo Core 1.86GHz, 2GB) in the company since year 2014. 
 
 Q: How to setup software updater behind a proxy?
 
@@ -20,3 +24,48 @@ Q: How to use github behind a proxy in the company?
 A: export https_proxy=proxy.avermedia.com:8080.
 
 [ref](http://stackoverflow.com/questions/5529218/how-to-use-git-behind-a-proxy)
+
+/*******************************************************************************
+* 2015-05-04 install lenovo ThinkPad
+*******************************************************************************/
+
+$ sudo apt-get update && sudo apt-get upgrade
+$ sudo apt-get install unattended-upgrades
+$ sudo dpkg-reconfigure -plow unattended-upgrades
+$ sudo unattended-upgrade
+$
+$ sudo apt-get install build-essential g++ vim git
+$
+$ sudo apt-get install virtualbox
+$ wget http://dlc-cdn.sun.com/virtualbox/4.3.10/Oracle_VM_VirtualBox_Extension_Pack-4.3.10-93012.vbox-extpack
+$ sudo adduser $USER vboxusers # logout/login
+$ # sudo usermod -G vboxusers -a $USER
+$
+$ sudo apt-get install picocom minicom
+$ sudo adduser $USER dialout # logout/login
+$ sudo apt-get install putty
+$
+$ sudo apt-get install vlc # VLC
+
+/*******************************************************************************
+* 2015-05-04 install with Ubuntu mini CD in VM
+*******************************************************************************/
+$ ### 2015-05-07 install ###
+$ #Nothing special. All use default configuration.
+$ #
+$ # --- in guest os ---
+$ sudo apt-get install git build-essential g++ cifs-utils openssh-server vim cscope ctags
+$ #
+$ # install VirtualBox Guest Additions CD image
+$ sudo mount -t iso9660 /dev/cdrom /media/
+$ # enable shared folders
+$ sudo adduser xxxxx vboxsf
+$
+$ # update DHCP
+$ sudo dhclient -r
+$ sudo dhclient eth0
+$ # Build for SE510
+$ sudo apt-get install m4 flex libncurses-dev gettext libglib2.0-dev zlib1g:i386 libstdc++-4.8-dev:i386
+$ wget http://ftp.twaren.net/Unix/GNU/gnu/bison/bison-2.7.tar.gz
+$ wget http://ftp.twaren.net/Unix/GNU/gnu/texinfo/texinfo-4.13.tar.gz
+
