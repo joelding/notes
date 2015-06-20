@@ -319,9 +319,117 @@
 	(d)低強度 (low-intensity)
 	(e)長時期 (long duration) 且高強度 (high-intensity)
 
+殭屍網路 Botnet -exercise
+35	ace
+36	b
 
+ 35.下列哪些有關 IRC 通訊協議的說明是正確的 ?
+	(a)IRC 全名是 Internet Relay Chat protocol
+	(b)IRC 全名是 Internet Remote Control protocol
+	(c)IRC 使用 TCP port 6667
+	(d)IRC 使用 UDP port 6777
+	(e)IRC 被用來作為 botnet 中 bot master 與 bots 溝通的協議
 
+ 	
 
+36.下列哪些有關 IRC 與 Botnet 關係的說明是錯誤的 ?
+	(a)Chat bot 最初是用在 IRC 聊天室中自動回應其他使用者 (取代真人)
+	(b)IRC 是bot master 與 bots 之間溝通的唯一協議
+	(c)Bot 聽取 bot master 經由 IRC 所下的命令並執行
+	(d)Botnet 就是由許多 bots 組成的殭屍網路
+	(e)通常會有 IRC server 作為 bot master 與 bots 之間溝通的橋樑
+
+Botnet 有哪些架構-exercise
+37	bce
+38	ac
+
+ 37.下列哪些有關 botnet 集中式架構 (centralized) 的說明是正確的 ?
+	(a)不須有專責的 C&C (Command and Control) 伺服器來傳達命令與指令
+	(b)須有專責的 C&C 伺服器來傳達命令與指令
+	(c)C&C 伺服器以 IRC 伺服器居多
+	(d)C&C 伺服器只能使用 IRC 伺服器
+	(e)Agobot 是使用集中式架構的 botnet
+
+ 38.下列哪些有關 botnet 點對點架構 (P2P) 的說明是正確的 ?
+	(a)不須有專責的 C&C (Command and Control) 伺服器來傳達命令與指令
+	(b)須有專責的 C&C 伺服器來傳達命令與指令
+	(c)使用 P2P 協議的目的是隱藏 bot master 與 bots 之間的通訊
+	(d)為了達到隱藏的效果, P2P 協議只能使用既有的 P2P 協議
+	(e)Phatbot 是使用 Bit Torrent (BT) P2P 協議
+
+Botnet 能夠用來做什麼-exercise
+38	c
+39	abcd
+
+ 38.網路上開始出現Botnet 租賃服務是西元哪一年 ?   
+	(a)2000 年
+	(b)2004 年
+	(c)2008 年
+	(d)2012 年
+	(e)2015 年
+
+ 	
+
+39.Botnet 經營者通常如何靠 botnet 來營利 ?
+	(a)販賣從被害者竊取的資料, 如帳號密碼
+	(b)提供 DDoS 阻斷式攻擊租賃服務
+	(c)提供代發垃圾郵件 (SPAM) 租賃服務
+	(d)威脅特定對象, 不從則發動網路戰爭
+	(e)提供廣告服務, 如 Facebook, Google.
+
+Botnet如何擴張 II-exercise
+40	abc
+41	c
+42	d
+43	ac 	
+
+40.Botnet 通常透過哪些方法擴張 ?
+	(a)透過 email 寄送含有掛馬網站的 URL, 引誘使用者點擊
+	(b)藉由已經存在的 bot 去入侵有弱點的主機
+	(c)藉由社交工程手法，讓使用者從被掛馬的網站下載 bot 並執行起來
+	(d)透過 DDoS 攻擊去入侵有弱點的主機
+	(e)透過 DoS 攻擊, 讓使用者自動到被掛馬的網站下載 bot 並執行起來
+
+ 41.下列有關”零時攻擊 (zero-day attack) 期間 ”的敘述何者是正確的 ?
+	(a)是指弱點被發現的時間到軟體公司發布弱點的期間
+	(b)是指弱點被發現的時間到補釘發布的期間
+	(c)是指惡意程式開發完成到補釘發布的期間
+	(d)是指惡意程式開發完成到補釘安裝完成的期間
+	(e)是指弱點被發現的時間到補釘發布的期間
+
+ 	
+
+42.下列有關”惡意程式擴散期間 ”的敘述何者是正確的 ?
+	(a)是指弱點被發現的時間到軟體公司發布弱點的期間
+	(b)是指弱點被發現的時間到補釘發布的期間
+	(c)是指惡意程式開發完成到補釘發布的期間
+	(d)是指惡意程式開發完成到補釘安裝完成的期間
+	(e)是指弱點被發現的時間到補釘發布的期間
+
+ 43.下列有關”弱點週期與零時攻擊 ”的敘述何者是正確的 ?
+	(a)在零時攻擊期間, 有該弱點的主機都有可能被感染或入侵
+	(b)只要該弱點的補釘發佈後, 主機就可免於該惡意程式的攻擊
+	(c)在惡意程式擴散期間, 有該弱點的主機都有可能被感染或入侵
+	(d)在零時攻擊期間, 有該弱點的主機如果安裝補釘可免於被感染或入侵
+	(e)為了讓更多主機安裝補釘, 救援期間應該越長越好
+
+Botnet如何偵測 II-exercise
+44	abcde
+45	abce
+
+ 44.下列哪些是偵測 Botnet 較常用的方法 ?
+	(a)分析網路流量, 偵測 C&C 的連線, 找出 C&C 伺服器的 IP 網址
+	(b)觀察 bot 的網路異常行為, 如發動 DDoS 攻擊或是發送大量郵件
+	(c)針對某種類型的 bot 程式做主機掃描
+	(d)使用有弱點的主機當蜜罐 (honeypot)，引誘入侵者, 側錄通訊流量
+	(e)直接執行 bot 惡意程式，看它跟誰聯絡
+
+ 45.Botnet 偵測上可能遭遇的困難有哪些 ?
+	(a)Bot master 與 bots 之間的C&C 通訊加密
+	(b)Bot master 與 bots 之間的C&C 通訊偽裝成常用的通訊協議, 如 http.
+	(c)Bot master 與 bots 之間的C&C 通訊架構使用 p2p 架構較不易追蹤
+	(d)Bot master 與 bots 之間的C&C 通訊採用 IRC 協議
+	(e)Bot master 與 bots 之間的C&C Server常常變換 IP 網址
 
 
 
