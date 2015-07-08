@@ -5,7 +5,8 @@ Q = @
 
 ifneq ($(KERNELRELEASE),)
 # kbuild part of makefile
-	obj-m := hello2.o
+	obj-m := hello4.o
+	hello4-objs := foo.o init.o
 else
 # Normal Makefile
 # x86

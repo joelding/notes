@@ -1,4 +1,4 @@
-SUBDIRS = hello2
+SUBDIRS = hello2 hello3 hello4
 
 all : subdirs
 
