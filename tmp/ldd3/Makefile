@@ -1,4 +1,5 @@
-SUBDIRS = hello2 hello3 hello4
+SUBDIRS = hello2 hello3 hello4 \
+	scull scull2
 
 all : subdirs
 
