@@ -63,13 +63,13 @@ static int scull_init(void)
 		scull_devno = MKDEV(scull_major, scull_minor);
 		retval = register_chrdev_region(scull_devno, 
 						scull_nr_devs, // count
-						"scull" // name
+						"scull2" // name
 						);
 	} else {
 		retval = alloc_chrdev_region(&scull_devno, 
 						scull_minor, // first minor
 						scull_nr_devs, // count
-						"scull" // name
+						"scull2" // name
 						);
 	}
 
