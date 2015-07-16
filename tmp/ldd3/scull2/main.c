@@ -34,12 +34,14 @@ static ssize_t scull_write(struct file *filp,
 static int scull_open(struct inode *inode,
 			struct file *filp)
 {
+	printk(KERN_ALERT "%s\n", __func__);
 	return 0;
 }
 
 static int scull_release(struct inode *inode,
 			struct file *filp)
 {
+	printk(KERN_ALERT "%s\n", __func__);
 	return 0;
 }
 
