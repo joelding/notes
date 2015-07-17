@@ -26,7 +26,7 @@ static ssize_t scull_read(struct file *filp,
 {
 	ssize_t retval = 0;
 
-	printk(KERN_ALERT "%s count=%d\n", __func__, count);
+	printk(KERN_DEBUG "%s count=%d\n", __func__, count);
 	#if 0
 	if (*offset == 0) {
 		retval = 0;
@@ -40,7 +40,7 @@ static ssize_t scull_read(struct file *filp,
 
 	retval = strlen(message);
 	memset(message, 0, BUF_LEN);
-	printk(KERN_ALERT "%s retval=%d\n", __func__, retval);
+	printk(KERN_DEBUG "%s retval=%d\n", __func__, retval);
 err_0:
 	return retval;
 }
@@ -53,7 +53,7 @@ static ssize_t scull_write(struct file *filp,
 	ssize_t retval = 0;
 
 
-	printk(KERN_ALERT "%s count=%d\n", __func__, count);
+	printk(KERN_DEBUG "%s count=%d\n", __func__, count);
 	
 	memset(message, 0, BUF_LEN);
 	if (copy_from_user(message, buffer, count)) {
@@ -78,7 +78,7 @@ static int scull_open(struct inode *inode,
 {
 	struct scull_dev *dev;
 
-	printk(KERN_ALERT "%s\n", __func__);
+	printk(KERN_DEBUG "%s\n", __func__);
        	dev = container_of(inode->i_cdev, struct scull_dev, cdev);
 	filp->private_data = dev;
 	
@@ -88,7 +88,7 @@ static int scull_open(struct inode *inode,
 static int scull_release(struct inode *inode,
 			struct file *filp)
 {
-	printk(KERN_ALERT "%s\n", __func__);
+	printk(KERN_DEBUG "%s\n", __func__);
 
 	return 0;
 }
@@ -105,7 +105,7 @@ static int scull_init(void)
 {
 	int retval = 0;
 
-	printk(KERN_ALERT "build: %s %s\n", __DATE__, __TIME__);
+	printk(KERN_DEBUG "build: %s %s\n", __DATE__, __TIME__);
 
 	if (scull_major) {
 		scull_devno = MKDEV(scull_major, scull_minor);
@@ -129,7 +129,7 @@ static int scull_init(void)
 	if (scull_major != MAJOR(scull_devno))
 		scull_major = MAJOR(scull_devno);
 
-	printk(KERN_ALERT "%s major=%d, minor=%d\n", __func__, MAJOR(scull_devno), MINOR(scull_devno));
+	printk(KERN_DEBUG "%s major=%d, minor=%d\n", __func__, MAJOR(scull_devno), MINOR(scull_devno));
 
 	scull_devices = kmalloc(sizeof(struct scull_dev), GFP_KERNEL);
 	if (!scull_devices) {
@@ -157,7 +157,7 @@ err_0:
 
 static void scull_exit(void)
 {
-	printk(KERN_ALERT "%s\n", __func__);
+	printk(KERN_DEBUG "%s\n", __func__);
 	cdev_del(&scull_devices->cdev);
 	kfree(scull_devices);
 	unregister_chrdev_region(scull_devno, 1);
