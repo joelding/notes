@@ -1,0 +1,57 @@
+CS08003 物聯網基礎架構與應用簡介
+
+ 	
+物聯網架構與國際標準-exercise
+
+abcdc
+bba
+
+1.在人與物互動關係中, 兩人用手機通話是屬於哪種性質 ?
+	(a)Human to Human (H2H)
+	(b)Human to Thing (H2T)
+	(c)Thing to Human (T2H)
+	(d)Thing to Thing (T2T)
+
+2.在人與物互動關係中, 用手機 app 控制家中電器開關是屬於哪種性質 ?
+	(a)Human to Human (H2H)
+	(b)Human to Thing (H2T)
+	(c)Thing to Human (T2H)
+	(d)Thing to Thing (T2T)
+
+3.在人與物互動關係中, 感應器 (sensor) 將收集到的資料傳給手機 app 是屬於哪種性質 ?
+	(a)Human to Human (H2H)
+	(b)Human to Thing (H2T)
+	(c)Thing to Human (T2H)
+	(d)Thing to Thing (T2T)
+
+ 	
+
+4.在人與物互動關係中, 兩輛汽車的感應器互相傳遞數據並互相通訊是屬於哪種性質 ?
+	(a)Human to Human (H2H)
+	(b)Human to Thing (H2T)
+	(c)Thing to Human (T2H)
+	(d)Thing to Thing (T2T)
+
+ 5.如果將物聯網產業架構鏈分為實體層、感知層、網路層、與應用層. 則 2G/3G/4G 通訊網路或 Internet 屬於哪一層 ?
+	(a)實體層
+	(b)感知層
+	(c)網路層
+	(d)應用層
+
+ 6.如果將物聯網產業架構鏈分為實體層、感知層、網路層、與應用層. 則 IEEE 802.15.4 Zigbee 無線網路屬於哪一層 ?
+	(a)實體層
+	(b)感知層
+	(c)網路層
+	(d)應用層
+
+ 7.如果將物聯網產業架構鏈分為實體層、感知層、網路層、與應用層. 則藍芽無線通訊Bluetooth 屬於哪一層 ?
+	(a)實體層
+	(b)感知層
+	(c)網路層
+	(d)應用層
+
+ 8.如果將物聯網產業架構鏈分為實體層、感知層、網路層、與應用層. 則一支嵌入震動感應器的牙刷屬於哪一層 ?
+	(a)實體層
+	(b)感知層
+	(c)網路層
+	(d)應用層
