@@ -33,5 +33,18 @@ Sublime Text 3
 U3014 ADV7842
 INT1 -> programmed as interrupt. line name INT_7842 is connected to RT3662 at pin name AD25, ball grid Y22.
 INT2 -> not used
+SCL/SDA, pin L3/M3, connects RT3662 AD19/AD20.
+
+mkdir testspace/
+
+i2c-tools
+	http://elinux.org/Interfacing_with_I2C_Devices
+	git clone https://github.com/groeck/i2c-tools.git
+
+	3.1.1
+	Makefile. operator ?=		a conditional variable assignment operator. It only has an effect if the variable is not yet defined.
+
+
+Register address 0xAA gets written by adv7842_s_sdp_io(). Either s->vs_end_o 
 
 
