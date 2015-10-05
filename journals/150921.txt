@@ -1,0 +1,219 @@
+/******************
+ * 2015/09/21 MON *
+ ******************/
+
+F239, 1.5.15
+
+(1024)gstf239src.c, gst_f239_src_stop(), line 972: gst_f239_src_stop
+(1024)gstf239src.c, gst_f239_src_stop(), line 991: FMB_API_SET_DEVICE_STATE AVT_DEVICE_STATE_STOP
+(1024)gstf239src.c, gst_f239_src_stop(), line 1000: gst_f239_src_stop exit
+
+(1024)gstf239src.c, gst_f239_src_start(), line 901: gst_f239_src_start 5
+(1024)gstf239src.c, gst_f239_src_start(), line 918: check h58 state version!
+(1024)gstf239src.c, gst_f239_src_start(), line 927: h58 state = 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 321: nFd 5
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 327: get_aver_caster_hd_duet_input_shm 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 336: sInputSource.nInputSource 48
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 345: 0, sInputAudioSource.nAudioSource 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 396: FMB_API_SET_AUDIO_SOURCE AVT_SRC_HDMI
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 449: FMB_API_GET_DEVICE_PARAM
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 478: avt_sys_vdo_pid 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 480: avt_sys_ado_pid 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 482: avt_sys_pmt_pid 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 484: avt_sys_pcr_pid 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 496: AVT_SYSTEM_AUTO_NULL_ALWAYS_OFF
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 502: sEncoder.nOutputRatio  = 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 504: avt_vdo_aspect_ratio_info_present_flag = 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 533: ENCODER_AUDIO_AUDIOONLY_MODE_OFF
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 542: ENCODER_AUDIO_AAC_ENCODEMODE_MPEG2_LC
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 565: ENCODER_VIDEO_H264_ENTROPY_MODE_CABAC
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 737: avt_vdo_h264_gop_size 30
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 740: sEncoder.sEncoderAudioAaclc.nAudioBitrate = 192000
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 810: avt_dsp_parameter_s.avt_ado_mpeg_config 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 811: avt_dsp_parameter_s.avt_ado_aac_config 2
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 812: avt_dsp_parameter_s.avt_ado_bitrate 192
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 839: 0 sComponentColorInfo.nBrightness 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 840: 0 sComponentColorInfo.nConstrast 131
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 841: 0 sComponentColorInfo.nSaturation 138
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 842: 0 sComponentColorInfo.nHue 0
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 866: FMB_API_GET_DEVICE_PARAM
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 875: avt_vdo_bitrate_mode 1
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 876: avt_vdo_bitrate 8000
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 877: avt_vdo_h264_profile 2
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 878: avt_vdo_h264_level 31
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 879: avt_vdo_format 83897602
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 880: avt_vdo_source_type 1
+(1024)gstf239src.c, gst_f239_h58_set_parameter(), line 883: FMB_API_SET_DEVICE_STATE AVT_DEVICE_STATE_START
+(1024)gstf239src.c, gst_f239_src_start(), line 950: nOutputStreamMode 1, src->procotol 1
+(1024)gstf239src.c, gst_f239_src_start(), line 963: gst_f239_src_start end.
+
+(<unknown>:1024): GStreamer-CRITICAL **: gst_poll_set_flushing: assertion `set != NULL' failed
+
+F239+, 1.8.18
+brd: 1100074500019
+log:
+(<unknown>:1060): GLib-GObject-WARNING **: IA__g_object_set_valist: object class `GstTCPServerSink' has no property named `init_tcp_multicast_pipeline'
+(1060)gstf239src.c, gst_f239_src_start(), line 903: gst_f239_src_start 6
+(1060)gstf239src.c, gst_f239_src_start(), line 920: check h58 state version!
+(1060)gstf239src.c, gst_f239_src_start(), line 929: h58 state = 3
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 321: nFd 6
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 327: get_aver_caster_hd_duet_input_shm 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 336: sInputSource.nInputSource 48
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 345: 0, sInputAudioSource.nAudioSource 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 396: FMB_API_SET_AUDIO_SOURCE AVT_SRC_HDMI
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 449: FMB_API_GET_DEVICE_PARAM
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 478: avt_sys_vdo_pid 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 480: avt_sys_ado_pid 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 482: avt_sys_pmt_pid 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 484: avt_sys_pcr_pid 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 496: AVT_SYSTEM_AUTO_NULL_ALWAYS_OFF
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 502: sEncoder.nOutputRatio  = 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 504: avt_vdo_aspect_ratio_info_present_flag = 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 533: ENCODER_AUDIO_AUDIOONLY_MODE_OFF
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 542: ENCODER_AUDIO_AAC_ENCODEMODE_MPEG2_LC
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 565: ENCODER_VIDEO_H264_ENTROPY_MODE_CABAC
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 739: avt_vdo_h264_gop_size 30
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 742: sEncoder.sEncoderAudioAaclc.nAudioBitrate = 192000
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 812: avt_dsp_parameter_s.avt_ado_mpeg_config 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 813: avt_dsp_parameter_s.avt_ado_aac_config 2
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 814: avt_dsp_parameter_s.avt_ado_bitrate 192
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 841: 0 sComponentColorInfo.nBrightness 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 842: 0 sComponentColorInfo.nConstrast 131
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 843: 0 sComponentColorInfo.nSaturation 138
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 844: 0 sComponentColorInfo.nHue 0
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 868: FMB_API_GET_DEVICE_PARAM
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 877: avt_vdo_bitrate_mode 1
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 878: avt_vdo_bitrate 8000
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 879: avt_vdo_h264_profile 2
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 880: avt_vdo_h264_level 31
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 881: avt_vdo_format 83897602
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 882: avt_vdo_source_type 1
+(1060)gstf239src.c, gst_f239_h58_set_parameter(), line 885: FMB_API_SET_DEVICE_STATE AVT_DEVICE_STATE_START
+(1060)gstf239src.c, gst_f239_src_start(), line 952: nOutputStreamMode 1, src->procotol 1
+(1060)gstf239src.c, gst_f239_src_start(), line 965: gst_f239_src_start end.
+
+(<unknown>:1060): GStreamer-CRITICAL **: gst_poll_set_flushing: assertion `set != NULL' failed
+
+0x80080	M_ERROR_INFO_H
+refer to MB86M01_M02_M03_Control_Command_1.02_for_Avermedia.pdf, section 3.7.
+
+bit15 bit14 bit13 bit12 bit11 bit10 bit9 bit8 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0
+0x80080	M_ERROR_INFO_H
+0x80082	M_ERROR_INFO_L
+0x80084	V_ERROR_INFO_H
+0x80086	V_ERROR_INFO_L
+0x80088	A_ERROR_INFO_H
+0x8008A	A_ERROR_INFO_L
+0x8008C	A2_ERROR_INFO_H
+0x8008E	A2_ERROR_INFO_L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************
+ * 2015/09/18 FRI *
+ ******************/
+
+
+1080p60->1080p30
+m01fmb248:<0><->fmb_hw_usb_polling_thread(3183):XError Info(16byte) 0x80080: 0eff fff1 0000 0000 0000 0000 0000 0000
+
+Fmb_hw_reg_read_lsi_multiple
+
+
+Goto Definition...		F12
+Jump Back				Alt+-
+Jump Forward			Shit+Alt+-
+
+/******************
+ * 2015/09/17 THU *
+ ******************/
+
+How to install Adobe Flash for Ubuntu 14.04 64-bit system? Met problems playing SE510 with Chromium.
+For 32-bit system, install flashplugin-installer
+For 64-bit system, install adobe-flashplugin 
+
+Test installed flash with this website: https://www.adobe.com/tw/support/flashplayer/ts/documents/tn_15507.htm
+
+1080p60 -> 1080i60
+m01fmb248:<0><->Fmb_core_send_command(1317):### ERROR command ack.CACK=0x01 SUB_CACK=0x80
+m01fmb248:<0><->fmb_api_change_lsi_state_internal(1374):ERROR : Fmb_core_send_command.
+m01fmb248:<0><->fmb_api_change_device_state(3896):fmb_api_change_device_state error: Change START state failed
+m01fmb248:<0><->fmb_api_set_device_state(2833):fmb_api_change_device_state result = -1
+(1335)gstm02src.c,    gst_m02_src_start(), line 664: set AVT_API_SET_DEVICE_STATE AVT_DEVICE_STATE_START done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sublime Text 3
+
+	Use ST3 like a
+	cscope -bqkR
+	Open Folder...; Find/Ctags/Rebuild Tags
+
+
+	How to list functions in a file and jump to it? Ctrl+R
+
+
+
+
+
+
+
+
+	adv7842_sdp_log_status
+	sdp_read(struct fmb_hard_private *, reg)
+	adv7842_init
+	adv7842.c@2561 Autodetect PAL NTSC (NOT SECAM) /* -> No effect */
+	io_read(, 0x0) & 0x3f
+
+	SDP: standard definition processor
+
+	adv7842_querystd
+
+	adv7842.c@5419 adv7842_querystd()
+
+U3014 ADV7842
+INT1 -> programmed as interrupt. line name INT_7842 is connected to RT3662 at pin name AD25, ball grid Y22.
+INT2 -> not used
+SCL/SDA, pin L3/M3, connects RT3662 AD19/AD20.
+
+mkdir testspace/
+
+i2c-tools
+	http://elinux.org/Interfacing_with_I2C_Devices
+	git clone https://github.com/groeck/i2c-tools.git
+
+	3.1.1
+	Makefile. operator ?=		a conditional variable assignment operator. It only has an effect if the variable is not yet defined.
+
+
+Register address 0xAA gets written by adv7842_s_sdp_io(). Either s->vs_end_o 
+
+
