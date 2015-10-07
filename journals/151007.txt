@@ -5,10 +5,60 @@
  ****************************************************************/
 
 GNU Octave as an alternative of MATLAB.
+$ wget ftp://ftp.gnu.org/gnu/octave/octave-4.0.0.tar.gz
+
+sudo apt-get install fort77
+To install the GNU Fortran 95 compiler - gfortran, the package is: gfortran. 
+
+$ sudo apt-get install octave
+$ octave
+GNU Octave, version 3.8.1
+Copyright (C) 2014 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type 'warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/get-involved.html
+
+Read http://www.octave.org/bugs.html to learn how to submit bug reports.
+For information about changes from previous versions, type 'news'.
+
+octave:1> 2^3
+ans =  8
+octave:2> 4*8
+ans =  32
+octave:3> A=[1,1,2;3,5,8;13,21,34]
+A =
+
+    1    1    2
+    3    5    8
+   13   21   34
+
+octave:4> 2*A
+ans =
+
+    2    2    4
+    6   10   16
+   26   42   68
+
+octave:5> exit
+
 
 REFERENCES:
-[1] official site http://www.gnu.org/software/octave/
+[1] official site:q http://www.gnu.org/software/octave/
+[2] simple examples https://www.gnu.org/software/octave/doc/interpreter/Simple-Examples.html
 
+
+gstf239src.c@525~534 describes how to enable audio-only mode in GStreamer layer.
+struct avt_dsp_parameter has a memeber called avt_vdo_off.
+The ioctl command is FMB_API_SET_DEVICE_PARAM [refer to gstf239src.c@gst_f239_h58_set_parameter]
+
+fmb_api.c@4797
 
 /****************************************************************
  *			2015/10/05 MON				*

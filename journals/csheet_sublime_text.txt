@@ -13,3 +13,10 @@ A:	cscope -bqkR
 
 Q:	How to list functions in a file and jump to it? 
 A:	Ctrl+R
+
+
+
+source insight
+
+Ctrl+]	go to definition
+Ctrl+T	jumpt back 
