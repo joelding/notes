@@ -4,6 +4,9 @@
  *			Notes on using Sublime Text 3				*
  ****************************************************************/
 
+Q:	How to open a folder where tags and cscope.* are built?
+A:	File > Open Folder...
+
 Q:	How to jump to a line by line number?
 A:	Ctrl+g. And then key in the line number.
 	
@@ -14,7 +17,8 @@ A:	cscope -bqkR
 Q:	How to list functions in a file and jump to it? 
 A:	Ctrl+R
 
-
+REFERENCES:
+[1] 使用Sublime Text3+Ctags+Cscope替代Source Insight https://www.zybuluo.com/lanxinyuchs/note/33551
 
 source insight
 
