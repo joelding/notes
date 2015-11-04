@@ -10,7 +10,7 @@ HTTP Live Streaming
 
 References:
 
-1. [Wiki on HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming
+1. [Wiki on HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming)
 
 History:
 
