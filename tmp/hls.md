@@ -1,5 +1,5 @@
 HTTP Live Streaming
-* a.k.a HLS
+* a.k.a **HLS**
 * an HTTP-based media streaming communications protocol
 * implemented by Apple Inc.
 * part of its QuickTime, Safari, OS X, and iOS software.
@@ -12,4 +12,5 @@ References:
 1. [Wiki on HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming
 
 History:
+
 * 2015/11/04  init
