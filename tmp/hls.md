@@ -9,6 +9,7 @@ HTTP Live Streaming
 * Can apply to conventional HTTP servers as origin and delivered over widely available HTTP-based content delivery networks.
 
 References:
+
 1. [Wiki on HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming
 
 History:
