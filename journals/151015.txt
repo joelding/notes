@@ -1,6 +1,46 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 
 /****************************************************************
+ *			2015/10/16 FRI				*
+ ****************************************************************/
+
+EVB TW6874 uses Winbond W78LE516.
+
+
+
+
+
+
+
+
+/****************************************************************
+ *			2015/10/15 THU				*
+ ****************************************************************/
+
+DspParameter relates to ioctl AVT_API_GET_DEVICE_PARAM.
+DspParameterSet relates to ioctl AVT_API_SET_DEVICE_PARAM.
+
+set_logical_device sets to FMB_DEVICE_M_STREAM_OUT1 or FMB_DEVICE_M_STREAM_OUT2.
+
+Section 3.6.2 initialization-dedicated parameter register S.
+address 0x1000 length 0x500 
+, whereas section 3.6.7 initialization-dedicated parameter register S2. (SYSTEM 2 side)
+M02 usere FMB_INIT_S_REG_OFFSET and FMB_INIT_S2_REG_OFFSET to denote the addresses. refer to fmb_hardware_config.h:336, 340
+
+
+fmb_api_instal_dsp_param()
+
+m01fmb248:<0><->fmb_hw_usb_polling_thread(3186):XError Info(16byte) 0x80080: 0e02 e001 0000 0000 0000 0000 0000 0000
+
+
+
+
+
+
+
+
+
+/****************************************************************
  *			2015/10/14 WED				*
  ****************************************************************/
 

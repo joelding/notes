@@ -1,5 +1,286 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 
+# 2015/11/12 THU
+
+* Can the too-big linux kernel issue be solve if M02/M22 driver is built as a module and inserted later?
+
+cnt = rawData_size - idx;
+
+if CHUNK = 32
+rawData_size = 46
+rawData[46]; // 0~45
+
+0~31
+offset = 0;
+cnt = 32;
+
+32~45
+offset = 32;
+cnt = 46 - 32 = 14
+
+offset = 46
+
+
+
+/****************************************************************
+ *			2015/11/11 WED				*
+ ****************************************************************/
+
+avt_nvram_tool nvram_set 2860 CountryCode TW; avt_nvram_tool nvram_get 2860 CountryCode; rm -rf /usr/flash/*; ls -l /usr/flash; ifconfig; reboot
+
+http://miaowgpu.org/
+
+http://riscv.org/
+
+opensparc
+
+/****************************************************************
+ *			2015/11/10 TUE				*
+ ****************************************************************/
+
+drivers/media/avermedia/m02_driver/ADV7842/adv7842.c:481:        MSG( ERROR, hw_priv_p, "error writing %02x, %02x, %02x", slave, adr, val );
+drivers/media/avermedia/m02_driver/ADV7842/adv7842.c:499:        MSG( ERROR, hw_priv_p, "error writing %02x, %02x, %02x", slave, adr, val )
+
+m01fmb248:<0><->adv_smbus_write_byte_no_check(499):error writing 40, ff, 80
+
+
+http://www.slllc.org.tw/sites/default/files/20151108_%E4%BF%A1%E6%81%AF_%E7%86%B1%E5%B0%B1%E9%80%80%E4%BA%86_%E5%8A%89%E7%BE%A4%E8%8C%82.mp3
+
+/****************************************************************
+ *			2015/11/06 FRI				*
+ ****************************************************************/
+
+Q: array of bit-field
+	"error: cannot take address of bit-field ..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
+ *			2015/11/04 WED				*
+ ****************************************************************/
+
+
+
+ubuntu studio edition
+$ sudo apt-get install ubuntustudio-desktop ubuntustudio-audio ubuntustudio-audio-plugins ubuntustudio-video ubuntustudio-graphics
+
+EDH protocol
+* Error Detection and Handling protocol
+* defined by SMPTE RP 165-1994 and the equivalent ITU standard ITU-R BT.1304
+* optional but commonly used addition to the SD-SDI standard; the HD-SDI includes a mandatory embedded CRC for each line.
+* only error detection: not for error correction; no mechanism in SD-SDI to allow a field containing errors to be retransmitted
+* used primarily to identify faulty equipment in a video chain
+
+References:
+1. [Error Detection and Handling](https://en.wikipedia.org/wiki/Error_Detection_and_Handling)
+
+History:
+* 2015/11/04
+
+
+The SD-SDI transmitter calculates two CRC values for each video field—one corresponding to the active picture, and corresponding to the entire field (excluding the switching lines)--and places them in an EDH ancillary data packet. The EDH packet is inserted at a specific location in each field of video. The SD-SDI receiver also generates the same two CRC values for each field and compares them against the CRC values in the received EDH packet to determine if each field of video is received without errors. The EDH packet also contains bits to signal that a prior link in a broadcast or transmission chain contained an error; equipment which receives a video signal with an incorrect CRC, and retransmits the signal, is expected to re-insert the correct CRC (which may be different if the equipment alters the video signal in any way) and set the flag indicating a prior error. This feature makes it easier to determine which link, in a multi-link chain, was the source of the error.
+
+
+
+
+/****************************************************************
+ *			2015/11/03 TUE				*
+ ****************************************************************/
+
+Differential pulse-code modulation (DPCM)
+* a signal encoder that uses the baseline of pulse-code modulation (PCM)
+* adds functionalities based on the prediction of the samples of the signal
+* invented by C. Chapin Cutler at Bell Labs in 1950
+
+Option 1: difference between two consecutive quantized samples
+Option 2: analysis by synthesis
+
+
+https://en.wikipedia.org/wiki/File:Cutler_DPCM_patent.png
+https://en.wikipedia.org/wiki/Differential_pulse-code_modulation
+http://web.stanford.edu/class/ee368b/Handouts/15-DPCM.pdf
+
+
+
+/****************************************************************
+ *			2015/11/02 MON				*
+ ****************************************************************/
+
+use workqueue:
+fmb_hw_usb_avt_polling_thread calls fmb_hw_usb_avt_polling_work which, in turn, calls avt_api_check_front_end_status which, in turn, calls adv7842_query_status.
+
+ 
+Find under cursor with cscope_maps.vim
+Ctrl-\ 
+'s'   symbol: find all references to the token under cursor
+'g'   global: find global definition(s) of the token under cursor
+'c'   calls:  find all calls to the function name under cursor
+'t'   text:   find all instances of the text under cursor
+'e'   egrep:  egrep search for the word under cursor
+'f'   file:   open the filename under cursor
+'i'   includes: find files that include the filename under cursor
+'d'   called: find functions that function under cursor calls
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /****************************************************************
+ *			2015/10/30 FRI				*
+ ****************************************************************/
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
+ *			2015/10/29 THU				*
+ ****************************************************************/
+「巴哈初步鋼琴曲集」（First Lessons in Bach）
+巴哈初步
+十九世紀末年，英國的著名音樂教育家華德‧卡羅爾（Walter Carroll），從巴哈作品中挑出很簡單又具有教育價值的小曲子集結成冊。
+曲集中共有十六首小曲。除了第6、7、8、11、12和15首是選自其它作品外，其餘的作品皆選自巴哈送給第二任妻子安娜‧瑪格達麗娜的「安娜‧瑪格達麗娜‧巴哈鋼琴小曲集」（Notenbuchlein fur Anna Magdalena Bach）。
+
+下冊十二首程度較高的曲目程度是為了使學生在彈完「巴哈初步鋼琴曲集上冊」後，能順利地銜接上巴哈小賦格曲或二聲部創意曲而編選的。
+
+
+
+
+
+
+
+/****************************************************************
+ *			2015/10/28 WED				*
+ ****************************************************************/
+SPI rom: U3007
+U3004: M02/M22
+
+
+/****************************************************************
+ *			2015/10/22 THU				*
+ ****************************************************************/
+
+SAN: storage area network
+
+Network-attached storage (NAS) was designed before the emergence of SAN as a solution to the limitations of the traditionally used direct-attached storage (DAS), in which individual storage devices such as disk drives are connected directly to each individual computer and not shared. In both a NAS and SAN solution the various computers in a network, such as individual users' desktop computers and dedicated servers running applications ("application servers"), can share a more centralized collection of storage devices via a network connection through the LAN.
+
+
+One way to loosely conceptualize the difference between a NAS and a SAN is that NAS appears to the client OS (operating system) as a file server (the client can map network drives to shares on that server) whereas a disk available through a SAN still appears to the client OS as a disk, visible in disk and volume management utilities (along with client's local disks), and available to be formatted with a file system and mounted.
+
+
+fmb_api_set_video_out_gop()
+
+dvbsnoop -if <file>
+read from binary <file> instead of demux device
+
+
+
+/****************************************************************
+ *			2015/10/20 TUE				*
+ ****************************************************************/
+
+fmb_api_get_version
+FMB_API_GET_VERSION
+
+Fmb_hw_get_version
+fmb_hw_device_get_version
+
+	    struct fmb_version_info vinfo;
+	    memset(&vinfo, 0, sizeof(struct fmb_version_info));
+	    ioctl(src->fmb_control_fd, FMB_API_GET_VERSION, &vinfo);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "driver: %s\n", vinfo.driver);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "firmware: %d.%d.%d.%d\n", vinfo.firm[0], vinfo.firm[1], vinfo.firm[2], vinfo.firm[3]);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "spirom %s\n", vinfo.spi_rom);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "lsi: %d\n", vinfo.lsi);
+	   
+
+/****************************************************************
+ *			2015/10/19 MON				*
+ ****************************************************************/
+
+branch: joel_low_latency_15101914
+
+vim
+	gg: go to top of the doc
+	G: go to end of the doc
+
+Peter applied binaries in ./mb86m0x_aac_23apr2014/non_secure/mb86m01_assp_nsec_enc_h.bin
+
+source/romfs/etc_ro/avt
+
+$ find . -name 'mb86*bin'
+./vendors/Ralink/RT3883/mb86m01_assp_nsec_enc_h.bin
+./romfs/etc_ro/avt/mb86m01_assp_nsec_enc_h.bin
+
+cat bin_filename | bin2c array_name
+
+
+gU : uppercase
+gu : lowercase
+ggVG: fast select all
+
+332608
+
+/****************************************************************
+ *			2015/10/16 FRI				*
+ ****************************************************************/
+
+EVB TW6874 uses Winbond W78LE516.
+
+http://www.linuxfromscratch.org/blfs/view/7.7/multimedia/gstreamer.html
+
+
+
+
+
+
+/****************************************************************
+ *			2015/10/15 THU				*
+ ****************************************************************/
+
+DspParameter relates to ioctl AVT_API_GET_DEVICE_PARAM.
+DspParameterSet relates to ioctl AVT_API_SET_DEVICE_PARAM.
+
+set_logical_device sets to FMB_DEVICE_M_STREAM_OUT1 or FMB_DEVICE_M_STREAM_OUT2.
+
+Section 3.6.2 initialization-dedicated parameter register S.
+address 0x1000 length 0x500 
+, whereas section 3.6.7 initialization-dedicated parameter register S2. (SYSTEM 2 side)
+M02 usere FMB_INIT_S_REG_OFFSET and FMB_INIT_S2_REG_OFFSET to denote the addresses. refer to fmb_hardware_config.h:336, 340
+
+
+fmb_api_instal_dsp_param()
+
+m01fmb248:<0><->fmb_hw_usb_polling_thread(3186):XError Info(16byte) 0x80080: 0e02 e001 0000 0000 0000 0000 0000 0000
+
+
+
+
+
+
+
+
+
 /****************************************************************
  *			2015/10/14 WED				*
  ****************************************************************/

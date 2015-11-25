@@ -17,6 +17,14 @@ A:	cscope -bqkR
 Q:	How to list functions in a file and jump to it? 
 A:	Ctrl+R
 
+Q:	Where to find out how to use cscope
+A:	:help cscope
+
+Q: 	add a new cscope database/connection
+A:	:cs add {file|dir}
+
+:cs help	show a brief synopsis.
+
 REFERENCES:
 [1] 使用Sublime Text3+Ctags+Cscope替代Source Insight https://www.zybuluo.com/lanxinyuchs/note/33551
 

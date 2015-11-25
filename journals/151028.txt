@@ -1,6 +1,118 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 
 /****************************************************************
+ *			2015/10/28 WED				*
+ ****************************************************************/
+SPI rom: U3007
+U3004: M02/M22
+
+
+/****************************************************************
+ *			2015/10/22 THU				*
+ ****************************************************************/
+
+SAN: storage area network
+
+Network-attached storage (NAS) was designed before the emergence of SAN as a solution to the limitations of the traditionally used direct-attached storage (DAS), in which individual storage devices such as disk drives are connected directly to each individual computer and not shared. In both a NAS and SAN solution the various computers in a network, such as individual users' desktop computers and dedicated servers running applications ("application servers"), can share a more centralized collection of storage devices via a network connection through the LAN.
+
+
+One way to loosely conceptualize the difference between a NAS and a SAN is that NAS appears to the client OS (operating system) as a file server (the client can map network drives to shares on that server) whereas a disk available through a SAN still appears to the client OS as a disk, visible in disk and volume management utilities (along with client's local disks), and available to be formatted with a file system and mounted.
+
+
+fmb_api_set_video_out_gop()
+
+dvbsnoop -if <file>
+read from binary <file> instead of demux device
+
+
+
+/****************************************************************
+ *			2015/10/20 TUE				*
+ ****************************************************************/
+
+fmb_api_get_version
+FMB_API_GET_VERSION
+
+Fmb_hw_get_version
+fmb_hw_device_get_version
+
+	    struct fmb_version_info vinfo;
+	    memset(&vinfo, 0, sizeof(struct fmb_version_info));
+	    ioctl(src->fmb_control_fd, FMB_API_GET_VERSION, &vinfo);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "driver: %s\n", vinfo.driver);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "firmware: %d.%d.%d.%d\n", vinfo.firm[0], vinfo.firm[1], vinfo.firm[2], vinfo.firm[3]);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "spirom %s\n", vinfo.spi_rom);
+	    log_printf(DEBUG_LEVEL_CRITICAL, "lsi: %d\n", vinfo.lsi);
+	   
+
+/****************************************************************
+ *			2015/10/19 MON				*
+ ****************************************************************/
+
+branch: joel_low_latency_15101914
+
+vim
+	gg: go to top of the doc
+	G: go to end of the doc
+
+Peter applied binaries in ./mb86m0x_aac_23apr2014/non_secure/mb86m01_assp_nsec_enc_h.bin
+
+source/romfs/etc_ro/avt
+
+$ find . -name 'mb86*bin'
+./vendors/Ralink/RT3883/mb86m01_assp_nsec_enc_h.bin
+./romfs/etc_ro/avt/mb86m01_assp_nsec_enc_h.bin
+
+cat bin_filename | bin2c array_name
+
+
+gU : uppercase
+gu : lowercase
+ggVG: fast select all
+
+332608
+
+/****************************************************************
+ *			2015/10/16 FRI				*
+ ****************************************************************/
+
+EVB TW6874 uses Winbond W78LE516.
+
+http://www.linuxfromscratch.org/blfs/view/7.7/multimedia/gstreamer.html
+
+
+
+
+
+
+/****************************************************************
+ *			2015/10/15 THU				*
+ ****************************************************************/
+
+DspParameter relates to ioctl AVT_API_GET_DEVICE_PARAM.
+DspParameterSet relates to ioctl AVT_API_SET_DEVICE_PARAM.
+
+set_logical_device sets to FMB_DEVICE_M_STREAM_OUT1 or FMB_DEVICE_M_STREAM_OUT2.
+
+Section 3.6.2 initialization-dedicated parameter register S.
+address 0x1000 length 0x500 
+, whereas section 3.6.7 initialization-dedicated parameter register S2. (SYSTEM 2 side)
+M02 usere FMB_INIT_S_REG_OFFSET and FMB_INIT_S2_REG_OFFSET to denote the addresses. refer to fmb_hardware_config.h:336, 340
+
+
+fmb_api_instal_dsp_param()
+
+m01fmb248:<0><->fmb_hw_usb_polling_thread(3186):XError Info(16byte) 0x80080: 0e02 e001 0000 0000 0000 0000 0000 0000
+
+
+
+
+
+
+
+
+
+/****************************************************************
  *			2015/10/14 WED				*
  ****************************************************************/
 
