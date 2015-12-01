@@ -1,5 +1,15 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 
+# 12/01 TUE
+
+Baohua Sung might just took cross toolchain in ubuntu 14.04.
+https://wiki.ubuntu.com/ToolChain
+
+
+
+
+
+
 
 How To Create SD Card Image For Qemu Emulator
 https://github.com/xboot/xboot/blob/master/documents/howto/How%20To%20Create%20SD%20Card%20Image%20For%20Qemu%20Emulator
