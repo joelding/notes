@@ -6,7 +6,30 @@ Baohua Sung might just took cross toolchain in ubuntu 14.04.
 https://wiki.ubuntu.com/ToolChain
 
 
+# 11/30 MON
 
+基于 hi3516A sdi  hdmi  IPC demo板  ，hi3516 IPC 开发板，hi3531 cvbs编码板，hi3531 vga、sdi、hdmi编码板子 。
+视频开发教程，请复制粘贴到url进行观看
+   http://www.youku.com/playlist_show/id_26281059.html   海思hi3516A芯片使用视频教程（专辑网址）
+http://v.youku.com/v_show/id_XMTM5MzgyNDkyNA==.html 
+ 
+   第一讲 海思芯片分析
+http://v.youku.com/v_show/id_XMTM5Mzg1MTk4MA==.html 
+ 
+   第二讲 hi3516A 硬件原理分析
+http://v.youku.com/v_show/id_XMTM5MzkxMjAzNg==.html 
+ 
+   第三讲_1 hi3516A SDK分析
+http://v.youku.com/v_show/id_XMTM5MzkyNDI5Ng==.html 
+ 
+   第三讲_2 hi3516A sdk 分析
+http://v.youku.com/v_show/id_XMTM5Mzk2MTM0NA==.html 
+ 
+   第四讲 设备采集发送视频
+http://v.youku.com/v_show/id_XMTM5Mzk4ODk5Mg==.html 
+ 
+   第五讲 pc解码显示
+http://v.youku.com/v_show/id_XMTM5NDAxNTA1Mg==.html 
 
 
 
