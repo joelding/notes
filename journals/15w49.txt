@@ -1,4 +1,199 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
+--------------------------------------------------------------------------------
+
+# 2015/12/03 THU
+================
+
+Traffic Control HOWTO
+	reference: http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html
+
+## How do I check busybox version (from busybox)?
+	Run $busybox. The first line shows the version.
+	Busybox on SE510 V1.12.1
+	tc, traffic control, is avaiable in 1.19.2.
+
+## How to add a busybox command?
+	reference: http://www.ehow.com/how_7834346_add-command-busybox.html
+
+## tc command next generation. Source code is available.
+	reference: http://tcng.sourceforge.net/
+
+
+## This article defines the term "traffic shaping" is what I am searching for.
+	reference: http://events.linuxfoundation.org/sites/events/files/slides/Linux_traffic_control.pdf
+
+## How to add to busybox iproute2, a collection of userspace utilities used to communicate with various Linux kernel components over the netlink protocol.
+
+
+## How can I do traffic shaping in Linux by IP?
+	reference: http://serverfault.com/questions/191560/how-can-i-do-traffic-shaping-in-linux-by-ip
+
+The traffic shaping layer of the kernel is, basically, a packet scheduler attached to your network card. So one traffic shaping policy applies to one network card.
+
+What you can do, in your case, is to create a list of IP and bandwidth attached, and then, for each IP, you create:
+
+One traffic shaping rule identified by a classid
+One netfilter rule that will mark packets to a specific mark value
+One Filter that will bind that packets marks to the classid, thus applying the traffic control rule to the specified packets.
+The example given by @Zoredache works, but I personnally prefer to use Netfilter capability instead of TC to filter packets, and HTB instead of CBQ for the shapping algorithm. So you can try something like this (requires Bash 4 for associative arrays):
+
+
+16:29:38.729026 IP 192.168.111.125.1024 > 234.8.8.8.8888: UDP, length 3372
+sudo tcpdump -i eth0 udp port 8888 | ./bytelog2 -g 200 -t 30 -s udp_se510.txt
+
+
+sudo tcpdump -w - -i eth0 udp port 8888
+
+# avtstream -i 0 720 2000 32 0
+$ cvlc udp://@234.8.8.8:8888
+
+
+
+
+
+# 2015/12/02 WED
+* collectuion of fiesta, festival, gala, celebration
+* test with Stylon's script to record, write an SOP
+* where is manu's modification to the kernel?
+	probably not the drivers. gitk linux/drivers/net shows nothing but mac address related by Peter.
+* pick network programming books
+? where to modify a network driver?
+? any book to teach how to use wireshark?
+
+
+# rtmpdump
+RTMP streaming media client, a tool for dumping media content streamed over RTMP.
+rtmpdump makes a connection to the specified RTMP server and plays the media specified by the given url.  The url  should be of the form
+         rtmp[t][e]://hostname[:port][/app[/playpath]]
+
+       Plain rtmp, as well as tunneled and encrypted sessions are supported.
+
+
+
+$ rtmpdump -r rtmp://10.1.9.226:1935/live/joel | ./bytelog2 -g 200 -t 30 -s test.txt
+
+
+
+
+
+Streaming Platform
+Platform: Custom RTMP
+Name: 
+
+
+
+Edit RTMP Server Address
+Server Name: Joel
+Server Address: rtmp://10.1.9.226:1935/live
+Stream Key: joel
+
+VLC media player can open the following network stream: rtmp://10.1.9.226:1935/live/joel.
+
+The following 2 are tested not working with VLC:
+	http://10.1.9.226:1935/live/joel/playlist.m3u8
+	http://10.1.9.226:1935/live/joel/playlist.m3u8
+
+
+
+
+Removed /etc/apt/apt.conf.d/40proxy. To enable software upgrade behind Avermedia proxy, the file contains only a line:
+Acquire::http::proxy "http://proxy.avermedia.com:8080";
+
+reference: http://askubuntu.com/questions/150208/how-to-configure-software-center-to-work-with-http-proxy
+
+
+
+
+Milestones of F239B
+2012-09-28 init SDK
+
+Linux Kernel Networking: Implementation and Theory
+by Rami Rosen
+Apress; 1 edition (December 22, 2013)
+
+Analysis of ARM, X86, MIPS designs shows no difference; microarchitecture is more important than instruction set architecture (ISA).
+reference: http://www.eetimes.com/author.asp?section_id=36&doc_id=1327016
+
+
+Henry Hu mentioned in his email about competitor 海康 http://www.hikvision.com/ does not support rtmp but others like http, rtsp, rtp, nfs, iscsi, dhcp, ntp, smtp, snmpv1, snmpv2c, snmpv3, upnp, sadp, pppoe, dns, ftp, onvif, psai, hikcgi.
+Need hardware encoder to output elementary stream.
+
+About Elementary, Transport, and Program Streams
+There are three common MPEG-2 stream types that are used to deliver MPEG-2 encoded video.
+
+Elementary streams: These streams contain only one MPEG-2 content channel and no audio. Elementary streams are required if you intend to use your MPEG-2 encoded video as a DVD Studio Pro asset.
+
+Transport streams: These streams can contain several MPEG-2 content channels and associated audio. All the channels are multiplexed together, allowing the receiver to choose which to play back. Compressor supports creating single-channel transport streams that can optionally include associated audio.
+Transport streams can also recover from interruptions during playback, making them ideally suited for broadcast and streaming applications where noise or network congestion can lead to interruptions.
+
+Program streams: These streams contain only one MPEG-2 content channel and its associated audio. Program streams require an error-free delivery method and are primarily used for storage or processing within a computer.
+By default, the Compressor MPEG-2 encoder creates elementary MPEG-2 steams. You can configure the MPEG-2 encoder to create transport or program streams and choose whether they should include audio in the Extras tab. See Extras Tab for more information.
+
+Note: All the Stream Usage settings except Generic output elementary streams. If you select any of the other Stream Usage settings and then configure the output to be either a transport or program stream, the Stream Usage changes to Generic. See Stream Usage for more information.
+reference https://documentation.apple.com/en/compressor/usermanual/index.html#chapter=18%26section=3%26tasks=true
+
+RTMP_OUT_CHUNK_SIZE
+MAX_CHUNK_BUFFER_SIZE
+RTMP_SOCKET_SEND_BUFFER_THRESHOLD
+
+
+
+
+
+
+
+
+
+# 2015/12/01 TUE
+
+http://www.linuxjournal.com/content/queueing-linux-network-stack
+
+
+
+
+
+
+
+
+Network traffic control
+
+* the process of managing, controlling or reducing the network traffic, particularly Internet bandwidth
+* e.g. by the network scheduler. 
+
+Traffic shaping
+* retiming (delaying) of packets (or frames) until they meet specified bandwidth and or burstiness limits. 
+
+https://en.wikipedia.org/wiki/Network_traffic_control
+
+
+73a3435c11c5bb8662d9d0679532c9d8e353c349
+Author: sobig.huang <sobig@sobig-desktop.(none)>
+Date:   Wed Dec 4 11:45:10 2013 +0800
+
+    1. estimate network bandwidth for send, drop, data in bitrate
+
+9f67853ac1c7416c0cb58e16a27591ccab7ce169
+Author: sobig <sobig@sobig-desktop.(none)>
+Date:   Wed Nov 20 10:01:18 2013 +0800
+
+    1. Add network bandwidth test function
+
+1f34cf9487d92495fd9f8f461fcccfacb8d1957e
+Author: sobig <sobig@sobig-desktop.(none)>
+Date:   Thu Oct 31 20:09:44 2013 +0800
+
+    1. add rtmp drop frame machanism in lower network bandwidth
+
+
+
+
+
+
+
+
+
+
+
 
 
 How To Create SD Card Image For Qemu Emulator
