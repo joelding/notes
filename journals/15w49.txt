@@ -1,6 +1,78 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 --------------------------------------------------------------------------------
 
+	2015/12/04 FRI
+==============================
+
+* From avm/se510b/AVerCasterHDDuet/RT288x_SDK/source/user/gstreamer/gstreadmer_plugin_good/Makefile, gst-plugins-good-0.10.31 is the used one folder. Stylon suspects function gst_multiudpsink_render in file gstmultiudpsink.c contains the modification to smooth out ups-and-downs of traffic.
+
+avm/se510b/AVerCasterHDDuet/RT288x_SDK/source/user/gstreamer
+├── gstreamer
+│   ├── config_done
+│   ├── gstreamer-0.10.36
+│   └── Makefile
+├── gstreamer_plugin_bad
+│   ├── config_done
+│   ├── gst-plugins-bad-0.10.23
+│   └── Makefile
+├── gstreamer_plugin_base
+│   ├── config_done
+│   ├── gst-plugins-base-0.10.36
+│   └── Makefile
+├── gstreamer_plugin_good
+│   ├── config_done
+│   ├── gst-plugins-good-0.10.27
+│   ├── gst-plugins-good-0.10.31
+│   └── Makefile
+├── libhls
+│   ├── libhls
+│   └── Makefile
+├── libm02
+│   ├── libm02
+│   └── Makefile
+├── librtmp
+│   ├── librtmp
+│   └── Makefile
+├── librtsp
+│   ├── AVerRtspServer
+│   ├── config_done
+│   └── Makefile
+├── Makefile
+└── tags
+
+* search 
+./gstreamer_plugin_bad/gst-plugins-bad-0.10.23/ext/rtmp/gstrtmpsink.c
+
+* vim can use the following command in normal mode to insert a time stamp:
+:r! date
+:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"
+:r! date "[+\%H:\%M]"
+
+:nnoremap <F9> "=strftime("%H:%M")<CR>P
+reference: http://vim.wikia.com/wiki/Insert_current_date_or_time
+
+
+11:18
+gstreamer_plugin_bad/gst-plugins-bad-0.10.23/ext/rtmp/gstrtmpsink.c
+
+11:29
+librtmp/librtmp/rtmp.c 
+RTMP_Write
+
+13:05
+女巫獵人、1080I60、1min
+
+
+
+
+
+
+
+
+
+
+
+
 # 2015/12/03 THU
 ================
 
