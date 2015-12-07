@@ -1,0 +1,150 @@
+
+本課程提供老師精心設計的講義共 12 單元.    
+ 
+指定用書  | Text Books
+無。本課程使用教師編撰的講義(中文版, 英文版).
+ 
+參考資料 | References
+1. 本課程提供老師精心設計的講義共 12 單元
+2. Larry L Peterson & Bruce S. Davie, "Computer Networks: A Systems Approach",  Morgan Kaufmann. 5th Ed. 2013
+ 
+授課大綱 |Syllabus
+第 1週：網路架構與七層參考模式簡介（OSI 7-layer Model)
+第 2週：IEEE 802.3 乙太網路 (Ethernet)
+第 3週：IEEE 802.11 無線區域網路 (Wireless LAN)
+第 4週：IEEE 802.1D 交換機的擴張樹演算法 (Spanning Tree Algorithm)
+第 5週：IEEE 802.1Q 虛擬區域網路 (Virtual LAN)
+第 6週：區域網路的可靠傳輸技術 －－ 滑動視窗技術
+                 (Reliable Transmission Technology －－ Sliding Windows)
+第 7週：路由器運作原理以及網路互連技術 (Routers, Interneworking, IP protocol)
+第 8週：TCP 與網路阻塞偵測與控制技術 ( TCP Congestion Control, AIMD, Slow Start)
+第 9週：IPv6 協議運作原理介紹 (IPv6 Protocol)
+第10週：IPv6/IPv4 轉換技術 (Dual_stack, Tunneling, Translators)
+第11週：網路安全基礎原理 (DoS/DDoS 網路攻擊, 網路黑洞, 殭屍網路)
+第12週：防火牆與企業升級 IPv6 安全 (Firewall, IPv6 雲端演練)
+
+
+
+
+
+
+
+網路基礎-1 練習題
+1.1	bde
+1.2	ae
+
+
+1.1.Which of the following are “internet applications” ?
+   下列哪些是”網路應用程式”?
+(a)Switches 交換機
+(b)Facebook
+(c)Internet protocol (IP protocol) 網際網路協議
+(d)On-line games 線上遊戲
+(e)Dropbox
+
+1.2.Which of the following are NOT “internet applications” ?
+   下列哪些不是”網路應用程式”?
+(a)Transmission Control Protocol (TCP) 傳輸控制協議
+(b)YouTube
+(c)Gmail
+(d)Skype
+(e)Routers 路由器
+
+
+網路基礎-2 練習題
+1.3	abe
+1.4	ade
+1.5	abce, 
+1.6*	bd
+1.7*	be
+1.8*	ad
+
+1.3.Which of the following statements are correct for “links” of a network?
+  下列哪些對於網路”鏈路”的定義是正確的?
+(a)A “point-to-point” link is a link to connect two devices or hosts. 一個”點對點”的鏈路用來連接兩個裝置或主機
+(b)A “multiple access” link is a link to connect many devices or hosts. 一個”多方存取”的鏈路用來連接多個裝置與主機
+(c)A “point-to-point” link is a link to connect more than two devices or hosts. 一個”點對點”的鍊路用來連接多於兩個裝置或主機
+(d)A “multiple access” link is a link to connect only two devices or hosts. 一個”多方存取”的鍊路用來連接兩個裝置或主機
+(e)The IEEE 802.11 wireless LAN (WiFi) is a multiple access link. IEEE 802.11 無線區域網路(WiFi)是一個多方存取的鍊路
+
+1.4.Which of the following are “nodes” of a network?
+   下列哪些是網路中的”節點”?
+(a)Switches 交換機
+(b)IEEE 802.3 Ethernet protocol IEEE 802.3 乙太網路協議
+(c)IEEE 802.11 wireless LAN (WiFi) protocol IEEE 802.11 無線區域網路(WiFi)協定
+(d)Wireless Access points (APs) 無線網路基地台 (APs)
+(e)Routers 路由器
+
+1.5.Which of the following statements are correct for “store-and-forward” concept ?
+  下列哪些關於”儲存並傳送”的觀念是正確的?
+(a)It’s a way for a network device to handle an incoming packet by storing the packet first and then forwarding the packet according to some switching/routing policy. 是一種網路裝置處理封包的方法，先將進入的封包儲存後，再依據交換或是路由原則將封包傳送出去。
+(b)A router usually stores an incoming packet in the memory first and then lookups the routing table to determine which port to forward the packet. 一個路由器通常先將進入的封包儲存在記憶體中，然後透過查詢路由表來決定要將封包轉送至哪個接口。
+(c)A switch usually stores an incoming frame in the memory first and then lookups the MAC address table to determine which port to forward the frame. 一個交換器通常先將一個進入的訊框儲存在記憶體中，然後透過查詢MAC位置表來決定該訊框應該要傳送至哪個接口。
+(d)The store-and-forward technology is usually used in a circuit switched network. "儲存並傳送”技術通常在電路交換網路上使用。
+(e)The store-and-forward technology is usually used in a packet switched network. "儲存並傳送”技術通常在封包交換網路上使用。
+
+1.6.Which of the following are correct for a “switched network” ?
+   下列哪些對於一個”交換網路”的敘述是正確的
+(a)A switched network is a network connected by switches and routers. 一個交換網路是指透過交換器與路由器連線的網路。
+(b)A switched network is a network connected by switches. 一個交換網路是指透過交換器連線的網路。
+(c)The “topology” of a switched network is limited to be a “spanning tree”. 交換網路的拓樸”必須是一個”擴張樹”。
+(d)The “topology” of a switched network is not limited, but the frames (packets) are delivered along the “spanning tree” of the switched network. 交換網路的”拓樸”並沒有特別限制，但訊框(封包)會透過交換網路中的”擴張樹”的路徑來傳送。
+(e)The frames (packets) are delivered along the “shortest path” of the switched network. 訊框(封包)會經由交換網路中的”最短路徑”來進行遞送。
+
+1.7.Which of the following statements are correct for an “interconnected network” ?
+  下列哪些對於”互聯網路”的敘述是正確的?
+(a)An interconnected network is a network that several networks are connected by switches. 一個互聯網路是一個用交換器連接多個網路的網路。
+(b)An interconnected network is a network that several networks are connected by routers. 一個互聯網路是一個用路由器連接多個網路的網路。
+(c)The “topology” of an interconnected network is limited to be a “spanning tree”. 互聯網路的”拓樸”必須是一個”擴張樹”的架構。
+(d)The “topology” of an interconnected network is not limited, but the packets are delivered along the “spanning tree” of the connected networks. 互聯網路的拓樸無特別限制，但封包會經由連結網路中的"擴張樹”路徑來遞送。
+(e)The packets are delivered along the routing path determined by the routing protocols. 封包會經由路由協議所決定的路徑來進行遞送。
+
+1.8.Which of the following statements are correct for “unicast/broadcast/multicast” ?
+  下列哪些對於”單點傳送/廣播傳送/群播傳送 “的敘述是正確的?
+(a)For unicast, a packet is delivered to only a destination station. 對於單點傳送來說，封包只會被遞送到一個目的地工作站。
+(b)For broadcast, a packet is delivered to multiple but not all the stations. 對於廣播傳送來說，封包會被遞送到多個但不是全部的工作站。
+(c)For multicast, a packet is delivered to all stations of the network. 對於群播傳送來說，封包會被遞送到在網路中的所有工作站。
+(d)In a switched network, a broadcast frame will be received by all the stations in the switched network. 在交換網路中，一個廣播訊框將會被所有在交換網路上的工作站所接收。
+(e)In an interconnected network, a broadcast frame will be received by all the stations in the interconnected network. 在互聯網路中，一個廣播訊框將會被所有在互聯網路中的工作站所接收。
+
+
+網路基礎-3 練習題
+1.9	d
+
+1.9.Which of the following statements are correct for delivering packets (datagrams) over the Internet ?
+   下列哪些對於透過互聯網遞送封包(資料段)的敘述是正確的
+(a)All packets destined to the same destination will be forwarded along the same routing path. 所有要送給同一目的地主機的封包，都會沿著相同的路徑傳送給該目的地主機。
+(b)The routing path of a packet is determined first before the packet is sending into the Internet. 一個封包的路由路徑在傳送進網路前就會被決定。
+(c)The Internet is reliable so that all packets will be received by the destination correctly. 互聯網是非常可靠的，因此所有封包都可以被目的地主機正確收到。
+(d)A packet may be partitioned into several fragments by routers. 一個封包可能會被路由器分成好幾個小封包(資料片段)。
+(e)All fragments of a packet will be forwarded along the same path to the destination. 所有的小封包(資料片段)都將會透過相同的路徑被傳送到目的地主機。
+
+
+網路基礎-4 練習題
+1.10	ade
+1.11	ace
+1.12	bcd
+	
+1.10.Which of the following statements are correct for “multiplexing” ?
+    下列哪些對於”多工”敘述是正確的?
+(a)Multiplexing is method usually used by a switch to transmitting multiple logical flows over a single physical link. 多工通常是交換機用來在一個實體鏈路上傳送多個邏輯資料流是的方法。
+(b)In TDM (Time-Division-Multiplexing), data are transmitted in predetermined frequency. 分時多工技術將資料安排在預先規畫好的頻譜中進行傳送。
+(c)In FDM (Frequency-Division-Multiplexing), data are transmitted in predetermined time slots. 分頻多工技術會將資料安排在預先規畫好的時段中進行傳送。
+(d)One of the drawbacks of TDM is that a flow can use only the time slots allocated to it. 一個資料流只能使用分配好的時段進行傳送是分時多工的缺點之一。
+(e)The link utilization for TDM and FDM may not good when some flows are overloaded and some are lightly loaded. 當部分資料流的負擔很重而部分資料流的負擔很輕時, 分時多工及分頻多工的鏈路使用率可能不太好。
+
+ 1.11.Which of the following statements are correct for “statistical multiplexing” ?
+     下列哪些對於”統計多工”敘述是正確的?
+(a)Data are transmitted based on demand of each flow. 資料的傳輸是依據每個資料流的不同需求。
+(b)Data are transmitted based on the arrival time of each flow. 資料的傳輸是依據每個資料流的抵達交換器的時間。
+(c)The bandwidth used by different flows may be different. 不同資料流使用的頻寬可能也不同。
+(d)The statistical multiplexing is fair due to the bandwidth used by different flows are the same. 統計多工技術是公平的, 因為每個資料流所使用的頻寬是相同的。
+(e)It provides better link utilization than TDM (Time-Division-Multiplexing) and FDM (Frequency-Division-Multiplexing). 統計多工的鏈結使用率比分時多工與分頻多工更好。
+
+1.12.Which of the following scheduling policies are usually used in “statistical multiplexing” to select flows for transmitting ?
+  ”統計多工” 通常使用下列哪些排程原則來選擇要傳輸的資料流 ?
+(a)分時多工法
+(b)Round-Rabin 循環法
+(c)Priority-based (based on flow priority) 優先權法(資料流的優先權)
+(d)FIFO (first-in-first-out) 先進先出法
+(e)FDM 分頻多工法
