@@ -148,3 +148,34 @@
 (c)Priority-based (based on flow priority) 優先權法(資料流的優先權)
 (d)FIFO (first-in-first-out) 先進先出法
 (e)FDM 分頻多工法
+
+網路基礎-5 練習題
+1.13	acd
+
+1.13.Which of the following statements are correct to describe the “network reliability” of Internet ? 
+     下列哪些關於互聯網”網路可靠度”的敘述是正確 ?
+     (a)Packets may be lost due to network congestion. 封包可能會因為網路阻塞而遺失。
+     (b)Lost packets will be retransmitted by the routers. 路由器會重送遺失的封包。
+     (c)Packets may be delayed for different delay time before reaching the destination. 不同封包在抵達目的地主機前可能會有不同的延遲。
+     (d)Packets may be out-of-order due to different routing paths. 封包可能會因為走不同的路徑而產生到達順序不一致的狀況。
+     (e)Packets will be delivered to the destination based on “first-in-first-out” order. 封包將依據先送先到的機制依序被傳送到目的地。
+
+網路基礎-6 練習題
+1.14	ae
+1.15	abc
+	
+1.14.Which of the following statements are correct to describe the “protocols” ? 
+    下列哪些對於”協定”敘述是正確的?
+(a)Protocols are the building blocks of a network architecture. 協議是網路架構基本建構區塊。
+(b)The “service interface” of a protocol describes the messages exchanged with other peer. 協議的”服務介面”描述了對於其他對等節點的訊息交換內容。
+(c)The “peer-to-peer interface” of a protocol describes the operations on this protocol. 協議的”同層介面”描述了這個協議中的運作方法。
+(d)The Internet Protocol (IP) provides a “reliable transmission service” to upper level protocols, such as TCP and UDP. IP協議為上層協議(如TCP/UDP) 提供可靠的傳輸服務。
+(e)The “peer-to-peer interface” of the IP protocol describes the “IP header” of the IP packet. IP 協議的“同層介面”描述了IP封包中的 ”IP標頭”內容。
+
+1.15.Which of the following schemes are usually used to describe the “protocol specification” ? 
+     列哪些方法常被用來敘述”協定規格”?
+(a)Pseudo-code 虛擬碼
+(b)State-machine diagram 狀態轉移圖
+(c)Message format 訊息格式
+(d)Network topology 網路拓樸
+(e)Network architecture 網路架構

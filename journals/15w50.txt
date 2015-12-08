@@ -1,6 +1,37 @@
 01234567890123456789012345678901234567890123456789012345678901234567890123456789
 --------------------------------------------------------------------------------
 
+	2015/12/07 MON
+==============================
+
+Studio Classroom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	2015/12/04 FRI
 ==============================
 
@@ -113,8 +144,8 @@ The example given by @Zoredache works, but I personnally prefer to use Netfilter
 16:29:38.729026 IP 192.168.111.125.1024 > 234.8.8.8.8888: UDP, length 3372
 sudo tcpdump -i eth0 udp port 8888 | ./bytelog2 -g 200 -t 30 -s udp_se510.txt
 
-
-sudo tcpdump -w - -i eth0 udp port 8888
+$ # write the raw packets to the standard output
+$ sudo tcpdump -w - -i eth0 udp port 8888 | ./bytelog2 -g 200 -t 30 -s udp_se510.txt
 
 # avtstream -i 0 720 2000 32 0
 $ cvlc udp://@234.8.8.8:8888
