@@ -179,3 +179,14 @@
 (c)Message format 訊息格式
 (d)Network topology 網路拓樸
 (e)Network architecture 網路架構
+
+網路基礎-7 練習題
+1.16	abcd
+
+1.16.Which of the following statements are correct to describe the “packet encapsulation” ? 
+     下列哪些對於“封包封裝”的敘述是正確的?
+     (a)For sending node, the data from application level will be encapsulated larger and larger until to the physical level. 對於傳送端來說，從應用層來的資料會被封裝得越來越大, 直到實體層為止。
+     (b)For receiving node, the data from physical level will be decapsulated smaller and smaller until to the application level. 對於接收端來說，從實體層來的資料將會被拆裝得越來越小, 直到應用層為止。
+     (c)The TCP segment is encapsulated into the IP datagram. That’s the IP protocol treats the TCP segment as data. TCP區段將被封裝至IP封包，也就是IP協議會將TCP區段當作資料來處理。
+     (d)The IP datagram is encapsulated into the underlying MAC frame. That’s the MAC protocol treats the IP datagram as a data. IP封包段將被封裝至下層的MAC訊框，也就是MAC協議會將IP封包視為資料來處理。
+     (e)For a router, it first uses encapsulation scheme to get an IP datagram from the receiving port, and then uses decapsulation scheme to transmit the IP datagram. 一個路由器會先使用封裝方法由接收接口取得IP封包，然後使用拆裝方法來傳輸該IP封包。
