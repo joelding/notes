@@ -190,3 +190,32 @@
      (c)The TCP segment is encapsulated into the IP datagram. That’s the IP protocol treats the TCP segment as data. TCP區段將被封裝至IP封包，也就是IP協議會將TCP區段當作資料來處理。
      (d)The IP datagram is encapsulated into the underlying MAC frame. That’s the MAC protocol treats the IP datagram as a data. IP封包段將被封裝至下層的MAC訊框，也就是MAC協議會將IP封包視為資料來處理。
      (e)For a router, it first uses encapsulation scheme to get an IP datagram from the receiving port, and then uses decapsulation scheme to transmit the IP datagram. 一個路由器會先使用封裝方法由接收接口取得IP封包，然後使用拆裝方法來傳輸該IP封包。
+
+網路基礎-9 練習題
+1.17	bde
+1.18	ce
+1.19	de
+	
+1.17.In the OSI (Open Systems Interconnection) 7-layer model, which of the following layers are usually included in a “router” ? 
+     在 OSI (開放式系統互聯通訊) 的七層架構下，”路由器”通常會包含下列哪些層 ?
+     (a) Transport layer 傳輸層
+     (b) Network layer 網路層
+     (c) Presentation layer 表示層
+     (d) Data link layer 資料鏈結層
+     (e) Physical layer 實體層
+
+1.18.In the OSI (Open Systems Interconnection) 7-layer model, which of the following layers are usually included in a “switch” ? 
+     在 OSI(開放式系統互聯通訊) 的七層架構下，”交換器”通常會包含下列哪些層?
+	(a) Transport layer 傳輸層
+	(b) Network layer 網路層
+	(c) Data link layer 資料鏈結層
+	(d) Session layer 會議層
+	(e) Physical layer 實體層
+
+1.19.In the OSI (Open Systems Interconnection) 7-layer model, which of the following layers are usually included in a wireless “Access Point (AP)” ? 
+     在OSI (開放式系統互聯通訊) 的七層架構下，”無線網路基地台”通常會包含下列哪些層?
+     (a) Application layer 應用層
+     (b) Transport layer 傳輸層
+     (c) Network layer 網路層
+     (d) Data link layer 資料鏈結層
+     (e) Physical layer 實體層
