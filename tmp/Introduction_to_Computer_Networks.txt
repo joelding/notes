@@ -219,3 +219,44 @@
      (c) Network layer 網路層
      (d) Data link layer 資料鏈結層
      (e) Physical layer 實體層
+
+
+網路基礎-10 練習題
+1.20	ace
+1.21	abcde
+
+1.20.Which of the following statements are correct for the “physical layer” in the OSI 7-layer model ? 
+     針對 OSI (開放式系統互聯通訊) 的七層架構, 下列哪些對於”實體層”的敘述是正確的?
+     (a)It handles the transmission of “raw bits” over a communication link. 它負責在通訊鏈路上傳送原始位元。
+     (b)It handles the transmission of “frames” over a communication link. 它負責在通訊鏈路上傳送訊框。
+     (c)To overcome noise or interference, different signal coding schemes may be used. 為了克服傳輸的雜訊或干擾，可以使用不同的訊號編碼方法。
+     (d)The physical layer must be a “wired link” 實體層一定是”有線鏈路”。
+     (e)The physical layer can be a “wireless link”. 實體層可以是”無線鏈路”。
+
+1.21.Which of the following links belong to the “physical layer” ? 
+     下列哪些鏈路歸屬於”實體層”?
+     (a)Coaxial cable 同軸電纜
+     (b)Twisted pair cable 雙絞線
+     (c)Optical Fiber 光纖
+     (d)Air space 無線空間
+     (e)Power line 電力線
+
+網路基礎-11 練習題
+1.22	bc
+1.23	bc
+
+1.22.Which of the following statements are correct for the “data link layer” in the OSI 7-layer model ? 
+     下列哪些對於OSI 7層架構中的”資料鏈結層”敘述是正確的?
+     (a)It handles the transmission of “raw bits” over a communication link. 它負責在通訊鏈路上傳送原始位元。
+     (b)It handles the transmission of “frames” to a directly connected device or host. 它負責在直接連線的設備或主機間傳送訊框。
+     (c)Different medium access control (MAC) protocols are used for different medium links. 不同的媒體鏈結可以使用不同的MAC協議。
+     (d)The CSMA/CD is the MAC protocol used by IEEE 802.11 wireless LAN network IEEE 802.11無線區域網路使用的 MAC 協議是 CSMA/CD。
+     (e)The CSMA/CA is the MAC protocol used by IEEE 802.3 Ethernet LAN network” IEEE 802.3乙太網路使用的 MAC 協議是 CiSMA/CA。
+
+1.23.We say that a device is a “layer 2” device if it implements only data link layer protocol and physical layer protocol. Which of the following devices are usually layer 2 devices ?
+     當我們說一個裝置是第二層裝置代表這個裝置只實現了”資料鏈結層”與”實體層”，下列哪些裝置是我們常說的第二層裝置?
+     (a)Routers 路由器
+     (b)Bridges 橋接器
+     (c)Switches 交換器
+     (d)Firewalls 防火牆
+     (e)Load Balancers 負載平衡裝置
