@@ -260,3 +260,34 @@
      (c)Switches 交換器
      (d)Firewalls 防火牆
      (e)Load Balancers 負載平衡裝置
+
+網路基礎-12 練習題
+1.24	abde
+1.25	ae
+1.26	bcd
+
+1.24.Which of the following statements are correct for the “network layer” in the OSI 7-layer model ? 
+     下列哪些敘述對於OSI 7層架構中的”網路層”敘述是正確的?
+     (a)It deals with the problem of how to transmit packets to a destination host via the Internet. 它負責處理如何將封包透過互聯網傳送至目標主機的問題。
+     (b)The Internet Protocol (IP) is a network layer protocol. IP 協議屬於網路層協議。
+     (c)The User Datagram Protocol (UDP) is a network layer protocol. UDP協議屬於網路層協議。
+     (d)The routing protocols are used by routers to establish the routing table. 路由協定被路由器用來建立其路由表。
+     (e)The routing table is used by a router to determine where a received packet should be forwarded. 路由表被路由器用在決定一個收到的封包要往哪裡轉送。
+
+1.25.We say that a device is a “layer 3” device if it implements network layer protocol, data link layer protocol, and physical layer protocol. Which of the following devices are usually layer 3 devices ?
+     當我們說一個裝置是第三層裝置代表這個裝置只實現了”網路層”、”資料鏈結層”與”實體層”，下列哪些裝置通常第三層裝置?
+     (a)Routers 路由器
+     (b)Bridges 橋接器
+     (c)Switches 交換機
+     (d)Wireless Access Points 無線網路基地台
+     (e)Wireless routers 無線網路路由器
+
+1.26.Which of the following protocols are routing protocols ? 
+     下列哪些協議是”路由協定”?
+     (a)Internet Protocol (IP) 互聯網協議
+     (b)Router Information Protocol (RIP) 路由資訊協議
+     (c)Open Shortest Path First (OSPF) protocol 開放最短路徑優先協議
+     (d)Boarder Gateway Protocol (BGP) 邊界閘道協議
+     (e)Transmission Control Protocol (TCP) 傳輸控制協議
+
+
