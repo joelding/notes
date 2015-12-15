@@ -290,4 +290,65 @@
      (d)Boarder Gateway Protocol (BGP) 邊界閘道協議
      (e)Transmission Control Protocol (TCP) 傳輸控制協議
 
+網路基礎-13 練習題
+1.27	acde
+1.28	bce
+
+1.27.Which of the following statements are correct for the “transport layer” in the OSI 7-layer model ? 
+     下列哪些對於OSI 七層架構中”傳輸層”的敘述是正確的?
+     (a)It deals with the problem of how to transmit packets between a pair of processes in different hosts. 它負責處理如何在不同主機上一對行程間的封包傳輸問題。
+     (b)The User Datagram Protocol (UDP) is a transport layer protocol that provides reliable transmission service. UDP協議是一個提供可靠傳輸服務的傳輸層協議。
+     (c)The Transmission Control Protocol (TCP) is a transport layer protocol that provides reliable transmission service. TCP協議是一個提供可靠傳輸服務的傳輸層協議。
+     (d)Routers usually not implement transport layer protocols. 路由器通常不實作傳輸層協議。
+     (e)Transport layer protocols usually are only implemented in end hosts. 傳輸層協議通常只實作在終端主機上。
+
+1.28.Which of the following are the main features of the Internet Architecture ?  
+     下列哪些是互聯網架構的主要特色?
+     (a)Strict layering. The layer N protocol is only allowed to use the services provided by layer N-1 protocol. 嚴格分層。第N層協議只允許使用由N-1層協議所提供的服務。
+     (b)Not strict layering. The layer N protocol is allowed to use the services provided by layer N-2 protocol or other underlying protocols directly. 不嚴格分層。第N層協議允許使用由N-2層或更底層協議所提供的服務。
+     (c)An hour-glass shape of protocols and IP serves as the focal point for the architecture 為沙漏狀架構, 而 IP 協議為此結構的中心點。
+     (d)An hour-glass shape of protocols and TCP/UDP serves as the focal point for the architecture. 為沙漏狀架構, 而 TCP/UDP協議為此結構的中心點。
+     (e)In order for a new protocol to be officially included in the architecture, there needs to be both a protocol specification and at least one representative implementations of the specification. 為了在此架構上新增加一個協議，我們需要同時具備一個協定規範與至少一個代表性的實作。
+
+網路基礎-15 練習題
+1.29	abc
+1.30	b
+1.31	c
+1.32	ad
+
+1.29.Which of the following factors are usually included to calculate the delay (latency) of transmitting a packet from a source device (such as switch) to a destination device ?  
+    下列哪些是計算從來源裝置(例如交換機)到目的裝置傳輸延遲時間的主要因素?
+    (a)Queuing time 排隊時間
+    (b)Transmission time 傳輸時間
+    (c)Propagation time 傳播時間
+    (d)Receiving time of the destination device 目的裝置的接收時間
+    (e)Table lookup time 查表時間
+
+1.30.The “transmission time” of a network interface (card) to transmit a packet is defined as packet size/bandwidth. For a 1Mbps Ethernet interface, what is the transmission time to transmit a packet of size 1Kbytes ? 
+     一個網路介面(卡)傳輸一個封包的“傳輸時間”是指將該封包大小除以網路卡頻寬。在1Mbps 乙太網路介面上傳輸一個大小為 1K 位元組的封包需多少時間??
+     (a)1 ms (毫秒)
+     (b)8 ms (毫秒)
+     (c)10 ms (毫秒)
+     (d)80 ms (毫秒)
+     (e)800 us (毫秒)
+
+1.31.The “propagation time” of a link to transmit a bit from one end to another end is defined as link distance/speed of light. For a link of 30Km, what is the propagation time of such a link ? Assume the speed of light is 3 x 10^8 m/second.
+     一個位元從鏈路的一端傳送到另外一端點的“傳播時間”是指該鏈路的距離/光速。若現有一鏈路長30公里，請問此鏈路的傳播時間為何 ? 假設光速是 3 x 10^8 公尺/秒。
+     (a)1 us (微秒)
+     (b)10 us (微秒)
+     (c)100 us (微秒)
+     (d)1 ms (毫秒)
+     (e)10 ms (毫秒)
+
+1.32.Which of the following statements are correct for “transmission time” and “propagation time” ?   
+     下列哪些對於”傳輸時間”與”傳播時間”的敘述是正確的?
+     (a)For short packet, the propagation time is more important as the packet will be complete transmitted quickly but needs a longer time to propagate to the other end of the link. 對短封包來說，傳播時間較為重要，因為短封包會很快傳送完成，但需要較長的時間來傳送到另一端。
+     (b)For short packet, the transmission time (bandwidth) is more important as the packet will be complete transmitted quickly and only needs a shorter time to propagate to the other end of the link. 對短封包來說，傳輸時間(頻寬)較為重要，因為短封包會很快傳送完成，而且需要較短的時間來傳送到另一端。
+     (c)For long packet, the propagation time is more important as the packet will be complete transmitted slowly but needs a longer time to propagate to the other end of the link. 對長封包來說，傳播時間較為重要，因為長封包會較慢完成傳送，但需要較長的時間來傳送到另一端。
+     (d)For long packet, the transmission time (bandwidth) is more important as the packet will be complete transmitted slowly but the first bit only needs a shorter time to propagate to the other end of the link. 對長封包來說，傳輸時間(頻寬)較為重要，因為長封包會較慢完成傳送，但第一個位元只需較短時間就可以傳播到另一端。
+     (e)The transmission time and propagation time are equal important for both short packet and long packet. 傳輸時間和傳播時間對於短封包和長封包同等重要。
+
+
+
+
 
