@@ -349,6 +349,14 @@
      (e)The transmission time and propagation time are equal important for both short packet and long packet. 傳輸時間和傳播時間對於短封包和長封包同等重要。
 
 
+網路基礎-16 練習題
+1.33	c
 
-
+1.33.The channel between a pair of processes can be viewed as a pipe. Delay x Bandwidth means how many data can be stored in the pipe. For a pipe with a delay of 80 ms and bandwidth of 1000 Mbps, how many data can be stored in the pipe ?
+    在兩個行程間的通道可視為一個管線。延遲 x 頻寬 則代表有多少資料可以儲存在管線之中. 若有一個管線的延遲是 80ms 且頻寬是 1000Mbps，則此管線最多可以儲存多少資料?
+    (a)1 MB
+    (b)8 MB
+    (c)10 MB
+    (d)80 MB
+    (e)100 MB
 

@@ -1,0 +1,17 @@
+Ethernet-1 exercise
+2.1	d
+2.2	bde
+
+2.1. Which of the following topology is used by traditional Ethernet ?下列哪種拓墣為傳統乙太網路中常使用？
+(a)Ring 環
+(b)Star 星形
+(c)Mesh 網狀
+(d)Bus 匯流排
+(e)Tree 樹狀
+
+2.2. Which of the following features are correct for traditional Ethernet 下列對傳統乙太網路特性的敘述何者為正確？
+(a)The receiver will send an ACK to sender if a frame is received correctly. 接收端成功正確收到訊框後，會送一個回覆（ACK）給發送者
+(b)The receiver will NOT send an NAK (negative acknowledgement) to sender even a received frame is not correct. 即使接收到的訊框有誤，接收者也不會送出訊框錯誤回覆（NACK）給傳送者。
+(c)A connection must be established between the sender and the receiver before a frame is transmitted. 在傳送訊框之前，傳送端和接收端之間必須先建立連線
+(d)No connection needs to be established before a frame is transmitted. 在訊框被傳送出去前，不需事先做連線
+(e)At most one node is allowed to transmit at a time in order to avoid collision. 為了避免發生衝撞, 同時最多只能有一個節點可以傳送訊號
