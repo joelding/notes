@@ -1,0 +1,8 @@
+顧思捷、陳錦輝	Linux C/C++ 網路程式設計	金禾資訊 2003
+
+序言
+
+* 學習網路程式初期，不是先去了解網路架構，而是呼叫函式庫提供的API。雖能迅速寫出一個網路程式，卻成為日後程式bug的溫床。
+
+Multicast over TCP/IP HOWTO
+http://www.ibiblio.org/pub/Linux/docs/HOWTO/other-formats/html_single/Multicast-HOWTO.html

@@ -15,3 +15,45 @@ Ethernet-1 exercise
 (c)A connection must be established between the sender and the receiver before a frame is transmitted. 在傳送訊框之前，傳送端和接收端之間必須先建立連線
 (d)No connection needs to be established before a frame is transmitted. 在訊框被傳送出去前，不需事先做連線
 (e)At most one node is allowed to transmit at a time in order to avoid collision. 為了避免發生衝撞, 同時最多只能有一個節點可以傳送訊號
+
+Ethernet-2 exercise
+2.3	bde
+2.4	abde
+2.5	bd
+2.6	ace
+2.7	bd
+
+2.3. Which of the following are correct for 10Base5 Ethernet ?下列哪些對10Base5乙太網路的敘述是正確的？
+(a)The maximum length of a segment is 100 meters 一個網段長度最大為100公尺
+(b)The maximum length of a segment is 500 meters 一個網段長度最大為500公尺
+(c)The speed is 5 Mbps 網路速度為5Mbps
+(d)The speed is 10 Mbps 網路速度為10Mbps
+(e)Baseband transmission 使用基頻傳輸
+
+2.4. Which of the following components are used in 10Base5 Ethernet ?下列哪些元件為10Base5乙太網路所使用 ?
+(a)Transceivers 收發器
+(b)Terminators 終端器
+(c)Optical Fiber 光纖
+(d)Repeaters 中繼器
+(e)Coaxial cable 同軸電纜
+
+2.5. Which of the following statements are correct for “repeaters” used in 10Base5 Ethernet ?下列哪些對於在10based5乙太網路使用的 ”中繼器” 的敘述是正確的？
+(a)It’s a device that forwards analog signals 此設備是用來傳送類比訊號
+(b)It’s device that forwards digital signals 此設備是用來傳送數位訊號
+(c)It’s a layer 2 device since it will forward a frame based on the MAC address 其為網路第二層設備，因為它是依據MAC地址來決定如何轉送
+(d)It’s a layer 1 device since it only forwards signals without dealing with the MAC address of a frame. 其為網路第一層設備，因為它只是轉送訊號而不管訊框中的MAC地址
+(e)The maximum number of repeaters allowed to install between any pair of nodes is less than 3. 任何兩個節點之間的路線上最多可以有三個中繼器
+
+2.6. Which of the following statements are correct for 10Base5 Ethernet with multiple segments ?下列哪些對於 多網段10Baesd5以乙太網路的敘述是正確的？
+(a)All nodes are in the same collision domain 所有節點皆在同一碰撞區域
+(b)Only the nodes in the same segment are in the same collision domain. 只有在同一網段上的節點才會在同一碰撞區域
+(c)The maximum network length is around 2500 meters 整個網路最大長度約為2500公尺
+(d)The maximum network length is around 1000 meters. 整個網路最大長度約為1000公尺
+(e)The maximum number of connected segments is 5. 結接的網段數量最多為5
+
+2.7. Which of the following statements are correct for “Manchester encoding” used by 10Base5 Ethernet ?下列哪些對於10Base5乙太網路中使用的 ”曼徹斯特編碼” 的敘述是正確的？
+(a)Each bit has a transition in the beginning of the bit 在每一個位元的開始就會有電位變化
+(b)Each bit has a transition in the middle of the bit 在每一個位元的中間會有電位變化
+(c)Each bit has two transitions 每一位元都會有兩次電位變化
+(d)Used to synchronize the clocks in sending and receiving nodes 用來讓傳送端節點和接受端節點的clocks 可以同步
+(e)For a 100 consecutive bits of “1”, the signal in the cable looks like a “high level” of 100 bit times. 對於連續100個位元的“1”，在電纜中的訊號看起來像一個長度為100位元時間的“高電位”訊號
