@@ -57,3 +57,36 @@ Ethernet-2 exercise
 (c)Each bit has two transitions 每一位元都會有兩次電位變化
 (d)Used to synchronize the clocks in sending and receiving nodes 用來讓傳送端節點和接受端節點的clocks 可以同步
 (e)For a 100 consecutive bits of “1”, the signal in the cable looks like a “high level” of 100 bit times. 對於連續100個位元的“1”，在電纜中的訊號看起來像一個長度為100位元時間的“高電位”訊號
+
+
+Ethernet-3 exercise
+2.8	ac
+2.9	bce
+2.10	acd
+
+2.8. Which of the following are correct for 10Base2 Ethernet ?下列哪些對10Base2乙太網路的敘述是正確的？
+(a)The maximum length of a segment is 200 meters 一個網段長度最大為200公尺
+(b)The maximum length of a segment is 2000 meters 一個網段長度最大為2000公尺
+(c)The speed is 10 Mbps 速度為10Mbps
+(d)The speed is 100 Mbps 速度為100Mbps
+(e)Broadband transmission 寬頻傳輸
+
+2.9. Which of the following are correct for 10BaseT Ethernet ?
+下列哪些對10BaseT乙太網路的敘述是正確的？
+(a)Use coaxial cable 使用同軸電纜
+(b)Use twisted pair cable 使用雙絞線電纜
+(c)The maximum length of a link is 100 meters 每一段鏈結最長為100公尺
+(d)The maximum length of a link is 1000 meters 每一段鏈結最長為1000公尺
+(e)The speed is 10 Mbps 速度為10Mbps
+
+2.10. Which of the following are correct for 10BaseT Ethernet ?下列哪些對10BaseT乙太網路的敘述是正確的？
+(a)The common network configuration is like “star” with many point-to-point segments 常見的網絡配置為“星狀”包含多個點對點的網段
+(b)The common network configuration is still a “bus”. 常見的網絡配置依然是“匯流排”拓墣
+(c)“Hub” is used to connect the point-to-point segments. “集線器”是用來連結多個點對點的網段
+(d)“Switch” can also be used to connect the point-to-point segments. “交換器”也可以用來連結多個點對點的網段
+(e)Both “Hub” and “Switch” are layer 2 devices. “集線器” 和 ”交換機”皆為第二層設備
+
+
+
+
+
