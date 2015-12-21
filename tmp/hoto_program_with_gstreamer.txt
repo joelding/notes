@@ -1,0 +1,8 @@
+Q: Why are some plugins called good while other called bad?
+A: It's labeling parts under mainstream maintenance, of bad quality, and etc. Refer to the following links for more detail.
+http://askubuntu.com/questions/468875/plugins-ugly-and-bad
+http://gstreamer.freedesktop.org/documentation/splitup.html
+
+Q: How to debug an existing GStreamer code or add debug messages?
+A: Export the environment variable GST_DEBUG, a comma-separated list of category:level pairs, with an optional level at the beginning, representing the default debug level for all categories. 
+The '*' wildcard is also available. For example GST_DEBUG=2,audio*:5 will use Debug Level 5 for all categories starting with the word audio. GST_DEBUG=*:2 is equivalent to GST_DEBUG=2.
