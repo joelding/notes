@@ -87,6 +87,51 @@ Ethernet-3 exercise
 (e)Both “Hub” and “Switch” are layer 2 devices. “集線器” 和 ”交換機”皆為第二層設備
 
 
+Ethernet-4 exercise
+2.11	1
+2.12	1
+2.13	4
+2.14	8
 
+2.11. Consider 4 stations are connected by a “hub” of 10baseT Ethernet. How many stations can transmit simultaneously without a collision ? 假如10basedT乙太網路 “集線器” 連結有4個工作站。請問有多少個工作站可以同時傳送且不會發生碰撞？(請輸入一整數)
+
+2.12. Consider 4 stations are connected by “Hub1” of 10baseT Ethernet, another 4 stations are connected by “Hub2” of 10baseT Ethernet, and Hub1 and Hub2 are connected directly. How many stations can transmit simultaneously without a collision ? 假如10basedT乙太網路 “集線器 1”連結有4個工作站，”集線器 2” 也連結有4個工作站, 且集線器1和集線器用一個網線直接相連。請問有多少工作站可同時傳送且不會發生碰撞？(請輸入一整數)
+
+2.13. Consider 4 stations are connected by a “switch” of 10baseT Ethernet. How many stations can transmit simultaneously without a collision ? 假如10basedT乙太網路 ”交換機” 連結有4個工作站。請問有多少個工作站可以同時傳送且不會發生碰撞？(請輸入一整數)
+
+2.14. Consider 4 stations are connected by “Switch1” of 10baseT Ethernet, another 4 stations are connected by “Switch2” of 10baseT Ethernet, and Switch1 and Switch2 are connected directly. How many stations can transmit simultaneously without a collision ? 假如10basedT乙太網路 ”交換機 1” 連結有4個工作站，”交換機 2” 連結有4個工作站，且交換機1和交換機2直接相連。請問有多少工作站可同時傳送且不會發生碰撞？(請輸入一整數)
+
+
+Ethernet-5 exercise
+2.15	b
+2.16	64, 1518
+2.17	08:00:2b:e4:b1:02
+2.18	ace
+
+2.15. Which of the following are correct for an Ethernet frame ?下列哪些對乙太網路訊框的敘述是正確的？
+(a)The “preamble” is a sequence of “00000000…00” for better synchronizations between the sender and receiver. “preamable”是一個“00000000…00”的序列，為了讓傳送端及接收端之間可以達到同步
+(b)The “preamble” is a sequence of “101010…10” for better synchronizations between the sender and receiver. “preamable”是一個“101010…10”的序列，為了讓傳送端及接收端之間可以達到同步。
+(c)Both destination MAC address and source MAC address have a length of 8 bytes. 目的地MAC地址和來源MAC地址長度皆為8 位元組
+(d)The “padding field” is used when the data part (LLC-frame) of the frame is less than 64 bytes. 當訊框的資料部分長度少於64位元組時，會使用到padding 欄位
+(e)The “Frame Check Sequence (FCS)” is used to check if the frame is received correctly, and the used algorithm is CRC-16. “Frame Check Sequence (FCS)”是用來檢查接受到的訊框是否正確，其使用的演算法為CRC-16.
+
+2.16.(a)The minimum length of an Ethernet frame is ______ bytes ? 
+(b) the maximum length of an Ethernet frame is ___________ bytes ?
+(a) 乙太網路訊框的最短長度為＿＿＿位元組 ? 
+(b) 乙太網路訊框的最大長度為＿＿＿位元組 ?
+
+2.17. The Ethernet MAC address is presented as a sequence of six numbers separated by colons. Each number corresponds to 1 byte of the 6-byte address and is given by a pair of hexadecimal digits, one for each of the 4-bit nibbles in the byte. What is the MAC address for 00001000 00000000 00101011 11100100 10110001 00000010 ?
+ 
+乙太網路之MAC地址以六個用冒號隔開的數字來呈現，每一個數字對應到1 位元組，且可用十六進位來表示，請問下列MAC 地址00001000 00000000 00101011 11100100 10110001 00000010，如何用上述方式來表示？(每格請填入兩個數字或字母的組合,如 00, 2b, 08…, 英文字母請用小寫)
+ 
+__(1)__: __(2)__: __(3)__ : __(4)__ : __(5)__ : __(6)__ 
+
+	
+2.18. An Ethernet adaptor (Network card) will receive all the frames from the link but only accept (handle) what kind of frames ?乙太網路介面卡（網路卡）從鏈結會收到所有的訊框，但它只會接受何種訊框？
+(a)Frames addressed to its own address 目的地位址為自己地址的訊框
+(b)Frames addressed to all unicast address 所有目的地位址為單點傳播地址的訊框
+(c)Frames addressed to the broadcast address 目的地位址為廣播地址的訊框
+(d)Frames addressed to all multicast addresses 目的地位址為所有群播地址的訊框
+(e)Frames addressed to a multicast address and it has been instructed 目的位址為一群播位址, 而此主機有加入該群組
 
 
