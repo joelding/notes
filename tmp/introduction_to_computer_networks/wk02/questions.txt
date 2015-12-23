@@ -135,3 +135,85 @@ __(1)__: __(2)__: __(3)__ : __(4)__ : __(5)__ : __(6)__
 (e)Frames addressed to a multicast address and it has been instructed 目的位址為一群播位址, 而此主機有加入該群組
 
 
+Ethernet-6 exercise
+2.19	d
+2.20	acd
+
+2.19. Which of the following MAC protocol is used by Ethernet ?下列何者為乙太網路使用的MAC協議 ?
+(a)CSMA (Carrier Sense Multiple Access)
+(b)Random Multiple Access Protocol
+(c)CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)
+(d)CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
+(e)CSMA/CE (Carrier Sense Multiple Access with Collision Enforcement)
+
+2.20. Which of the following are correct for CSMA (Carrier Sense Multiple Access) protocol ?下列哪些對於CSMA (Carrier Sense Multiple Access) 協議的敘述是正確的 ?
+(a)Listen (carrier sense) before transmit. 傳輸前先聽
+(b)Transmit a frame any time when a station has frame. 當工作站有訊框時就立即傳送
+(c)If channel is sensed idle, then transmit entire frame without considering if frame collision is detected. 當偵測到頻道為空閒時，就傳送整包訊框，無論是否偵測到訊框碰撞
+(d)If channel is sensed busy, then defer transmission. 假如偵測到頻道為忙碌時，就延遲傳輸
+(e)No collision will happen as the frames are transmitted only when the channel is sensed “idle”. 因為只有當偵測到頻道為空閒時，訊框才會被傳送出去，因此不會發生碰撞的情形
+
+
+
+se
+2.21	abe
+2.22	ad
+2.23	bce
+2.24	512
+
+2.21. Which of the following are correct for CSMA/CD (Carrier Sense Multiple Access with Collision Detection) protocol ? 下列哪些對於CSMA/CD協議的敘述是正確的 ?
+(a)Listen (carrier sense) before transmit. 傳輸前先聽
+(b)If channel is sensed idle, then transmit a frame and stop the transmission when a collision is detected. 假如偵測頻道為空閒時，就開始傳送訊框，一旦發現碰撞發生，立即停止傳送
+(c)If channel is sensed idle, then transmit entire frame without considering if frame collision is detected. 假如偵測頻道為空閒時，就開始傳送整個訊框，無論是否偵測到訊框碰撞
+(d)If channel is sensed busy, then defer transmission for a random time. 假如偵測頻道為忙碌時，則延遲一段亂數時間後再傳送
+(e)If channel is sensed busy, then defer transmission until the channel is idle. 假如偵測頻道為忙碌時，則延遲到頻道變成空閒時再傳送
+
+2.22. Which of the following are correct when a “collision” happens for CSMA/CD protocol ?針對CSMA/CD 協議，當碰撞發生時，下列敘述哪些是正確的？
+(a)A jamming sequence (frame) will be sent to enforce the collision. 擾亂訊號會被送出，以強迫發生碰撞
+(b)The entire frame will still be transmitted. 整個訊框仍會被傳送
+(c)The transmission is stopped and after a random delay, the frame is transmitted again immediately. 傳輸會先停止，經過延遲一段亂數的時間後，會立即傳送該訊框
+(d)The transmission is stopped and after a random delay, the frame is transmitted again from the carrier sense step. 傳輸會先停止，經過延遲一段亂數的時間後，會由載波偵測的步驟開始傳送該訊框
+(e)The transmission is stopped. But the frame is transmitted again as long as the channel becomes idle. 傳輸會先停止，但只要頻道變成空閒，訊框就會立即再傳送出去
+
+2.23. The “collision window” of the CSMA/CD protocol is time required to detect a collision. Which of the following are correct for collision window ? Assume the one way propagation time of the network is “a”.CSMA/CD 協定中的”衝撞視窗”是指偵測碰撞所需要的時間。下列哪些有關衝撞視窗的敘述是正確的？假設網路最遠兩端單向的訊號傳遞時間為‘a’
+(a)The collision window is equal to a 衝撞視窗等於a
+(b)The collision window is equal to 2a 衝撞視窗等於2a
+(c)The worst case scenario to detect a collision happens when the two hosts are at opposite ends of the Ethernet 偵測碰撞之最差情況(需要最長時間)是當兩個主機位於乙太網路的兩端
+(d)The worst case scenario to detect a collision happens when the two hosts are close to each other. 偵測碰撞之最差情況(需要最長時間)是當兩個主機非常靠近
+(e)The best case scenario to detect a collision happens when the two hosts are close to each other. 偵測碰撞之最佳情況(需要最短時間)是當兩個主機非常靠近
+
+2.24. Consider that a maximally configured Ethernet is 2500 m long, and there may be up to four repeaters between any two hosts, the round trip delay has been determined to be 51.2 us. For 10Mbps Ethernet (such as 10base5), what is the minimum length of a frame in order to detect all possible collisions ? ___________ bits
+  假設最長的乙太網路最長為2500公尺，在任意兩主機之間可能最多可以有4個中繼器，而訊號來回的延遲時間為51.2 us。針對 10Mbps 乙太網路(如10base5)，為了能偵測到所有可能的碰撞，一個訊框長度至少要有多少位元 ? ＿＿＿＿ 
+
+
+Ethernet-8 exercise
+2.25	b
+
+2.25.The minimum length of a frame for the Ethernet is 64 bytes. Which of the following are correct when a node receives a frame shorter than 64 bytes ? 
+乙太網路訊框之最短長度為64 位元組。當一個節點收到小於64 位元組的訊框時，下列哪些敘述是正確的 ?
+(a)No, it is impossible for a node to receive frames shorter than 64 bytes.不可能收到長度小於64位元組的訊框。
+(b)Frames shorter than 64 bytes will be treated as “collided” frames and will be dropped directly. 長度小於64位元組的訊框會被當作被碰撞過的訊框，且被直接捨棄
+(c)Frames shorter than 64 bytes can still be processed as some of the fields such as MAC addresses are correct. 長度小於64位元組的訊框依然會被處理，因為某些欄位的值(如MAC地址)是正確的
+(d)Frames shorter than 64 bytes can still be processed as long as they are “broadcast” frames to all nodes. 長度小於64位元組的訊框依然會被處理，只要它是廣播訊框
+(e)A jamming sequence (frame) will be sent to enforce the collision. 擾亂訊號(訊框)會被送出讓碰撞更為徹底
+
+
+Ethernet-9 exercise
+2.26	(a) 0, 1
+	(b) 0, 3
+	(c) 0, 7
+
+2.26. The “exponential backoff algorithm” used by CSMA/CD protocol works as each time a network adaptor tries to transmit but fails, it “doubles” the amount of time it waits before trying again. Assume the collision window or slot time of the network is “T”
+(a)For the first collision, the waiting time for the node to randomly select is among [__(1)__, __(2)__ ] T times 
+(b)For the second collision, the waiting time for the node to randomly select is among [__(3)__, __(4)__] T times 
+(c)For the third collision, the waiting time for the node to randomly select is among [__(5)__, __(6)__] T times
+用於CSMA/CD協議中的指數後退演算法運作方式為，每當網路介面卡傳送失敗時，再次嘗試傳送之前的延遲時間上限會加倍。假設衝撞視窗(或訊槽時間)為T.
+(a)針對第一次碰撞，節點等待的時間隨機變數的範圍是在 [__(1)__, __(2)__ ] T  (每個空格請輸入一整數)
+(b)針對第二次碰撞，節點等待的時間隨機變數的範圍是在 [__(3)__, __(4)__ ] T (每個空格請輸入一整數) 
+(c)針對第三次碰撞，節點等待的時間隨機變數的範圍是在 [__(5)__, __(6)__ ] T (每個空格請輸入一整數) 
+
+
+
+
+
+
