@@ -213,7 +213,16 @@ Ethernet-9 exercise
 (c)針對第三次碰撞，節點等待的時間隨機變數的範圍是在 [__(5)__, __(6)__ ] T (每個空格請輸入一整數) 
 
 
+Ethernet-10 exercise
+2.27	ac
 
+2.27.Which of the following are correct for Ethernet performance ? 
+下列哪些對於乙太網路效能的敘述是正確的 ?
+(a)Ethernets work best under lightly loaded conditions. 乙太網路在負載較輕的狀況下運作最好
+(b)Ethernets work very well under heavy loads as all collisions will be detected. 乙太網路在負載重的狀況下運作非常好, 因為所有碰撞皆可被偵測到
+(c)Under heavy loads, too much of the network’s capacity is wasted by collisions. 在負載重的狀況下，太多的網路頻寬資源會因為碰撞而浪費掉
+(d)The throughput of an Ethernet depends on the traffic load, heavy load will have better throughput. 乙太網路吞吐量大小取決於流量負載，負載越重吞吐量越高
+(e) It’s a fair network that all nodes may share the bandwidth very equally. 這是一個公平的網路，所有節點使用的頻寬總量都相同
 
 
 
