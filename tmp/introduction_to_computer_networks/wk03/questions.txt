@@ -1,0 +1,11 @@
+Wireless LAN-1 exercise
+3.1	d
+
+3.1 In IEEE 802.11 Wireless LAN, the signals are propagated through which media ?
+在IEEE 802.11 無線區域網協定中，訊息透過下列哪個媒介傳輸？
+ 
+	(a) Coaxial cable同軸電纜
+	(b) Optical fiber光纖
+	(c) Twisted pair雙絞線
+	(d) Space (air) 空間（空氣, 無線電波）
+	(e) Power Line 電源線
