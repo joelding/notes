@@ -1,0 +1,56 @@
+Wireless LAN-1 exercise
+3.1	d
+
+3.1 In IEEE 802.11 Wireless LAN, the signals are propagated through which media ?
+在IEEE 802.11 無線區域網協定中，訊息透過下列哪個媒介傳輸？
+ 
+(a) Coaxial cable同軸電纜
+(b) Optical fiber光纖
+(c) Twisted pair雙絞線
+(d) Space (air) 空間（空氣, 無線電波）
+(e) Power Line 電源線
+
+Wireless LAN-2 exercise
+3.2	ace *
+3.3	ac *
+3.4	ac
+3.5 	ace *
+
+3.2 Assume each of four nodes is able to send and receive signals that reach just the nodes to its immediate left and right. Suppose both A and C want to communicate with B and so they each send it a frame. Which of the following statements are correct for “hidden node problem” ?
+設想下面四個節點都只能跟鄰近左右邊的點傳收訊息，假設現在A和C都想要跟B通訊，所以各自都對B送了一個訊框，下列哪些對於「隱藏節點問題」的敘述是正確的？
+
+(a) These two frames collide with each other at B 這兩個訊框「會」在 B 處碰撞
+(b) These two frames will NOT collide with each other at B 這兩個訊框「不會」在 B 處碰撞
+(c) Neither A nor C is aware of this collision A和C都不會察覺這次碰撞
+(d) Both A and C are aware of this collision A和C都會察覺這次碰撞
+(e) A and C are said to hidden nodes with respect to each other A 和 C 是彼此的隱藏節點
+
+3.3. For the following wireless configuration, which two nodes are hidden from each other ? Assume B can exchange frames with A and C, but it cannot reach D. And C can reach B and D but not A
+下列無線網路配置中，哪兩個點是彼此的隱藏節點？假設 B 可以跟 A、C 交換訊框，但不行跟 D 通訊，而 C 可以和 B、D 通訊，但不行跟 A 通訊。
+
+(a) A and C
+(b) A and D
+(c) B and D
+(d) B and C
+(e) C and D
+
+3.4. Assume each of four nodes is able to send and receive signals that reach just the nodes to its immediate left and right. Suppose B is sending a frame to A. Which of the following statements are correct for “exposed node problem” ?
+設想下面四個節點都只能跟鄰近左右邊的節點傳收訊息，假設B正在送一個訊框給A，下列哪些對於「暴露節點問題」的敘述是正確的？
+
+(a) Although B and C are exposed to each other’s signals, there is no interference if B transmits to A while C transmits to D. 雖然 B 和 C 的訊號彼此暴露，但是 B 傳給 A 而 C 也同時傳給 D 時，A 跟 D 都可以成功收到訊框 (兩者並不會有衝撞)
+(b) C cannot transmit to anyone because it can hear B’s transmission. C不能傳訊息給任何人，因為C聽到B正在傳輸
+(c) C is able to transmit to node D C可以傳送給D
+(d) D is able to transmit to node C D可以傳送給C
+(e) A is able to transmit to node B A可以傳送給B
+
+3.5. For the following wireless configuration, which two nodes are exposed to each other ? Assume B can exchange frames with A and C, but it cannot reach D. And C can reach B and D but not A
+下列無線網路的配置中，哪兩個節點彼此是對方的暴露節點？假設B可以跟A、C交換訊框，但是不能跟D通訊，C可以跟B、D通訊，但不能跟A通訊。
+
+(a) A and B
+(b) A and C
+(c) B and C
+(d) B and D
+(e) C and D
+
+
+
