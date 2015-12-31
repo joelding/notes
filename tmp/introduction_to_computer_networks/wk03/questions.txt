@@ -53,3 +53,22 @@ Wireless LAN-2 exercise
 (e) C and D
 
 
+Wireless LAN-4 exercise
+3.8	a *
+3.9	bce
+
+3.8. For IEEE 802.11 CSMA/CA protocol, which of the following statements are correct for any node that sees an RTS frame but not the CTS frame ? 
+在IEE 802.11 CSMA/CA 協定裡，關於那些可以看到RTS，但是沒看到CTS的訊框，下列哪些敘述是正確的？
+(a)	It is close to the sender and therefore cannot transmit for the period of time specified in the RTS frame. 節點太靠近傳送端，不可以在 RTS 訊框上記載的時間內發送訊息。
+(b)	It is close to the sender and therefore can transmit for the period of time specified in the RTS frame. 節點太靠近傳送端，可以在 RTS 訊框上記載的時間內發送訊息。
+(c)	It is not close enough to the receiver to interfere with it, so is free to transmit. 節點沒有靠近接收端到會影響接收端的程度，所以可以自由傳送。
+(d)	It is not close enough to the sender to interfere with it, so is free to transmit. 節點沒有靠近傳送端到會影響傳送端的程度，所以可以自由傳送。
+(e)	It is close to the receiver and therefore can transmit for the period of time specified in the RTS frame. 節點很靠近接收端，可以在 RTS 訊框上記載的時間內都可以傳送訊息。
+
+3.9. For IEEE 802.11 CSMA/CA protocol, what happens if nodes A and B detect an idle link and transmit an RTS frame to node C at the same time ? Assume that nodes A ,B and C are located within the transmission range of each other.
+在 IEEE 802.11 CSMA/CA 協議裡, 如果A和B同時偵測到一個閒置的通道，且同時都傳了一個 RTS 訊框給節點 C，這樣會發生甚麼事？假設A, B 和 C 都位於彼此的傳輸範圍內。
+(a)	Both the RTS frames will be transmitted successfully without collision. 兩個RTS訊框都會傳送成功不會產生碰撞。
+(b)	These two RTS frames will collide with each other 兩個 RTS 訊框會在節點 C 發生碰撞。
+(c)	The senders realize the collision has happened when they do not receive the CTS frame after a period of time 當一段時間後，兩個傳送端都沒有收到 CTS 訊框時，他們會知道發生碰撞
+(d)	The senders realize the collision has happened by using a collision detection algorithm like the Ethernet. 兩個傳送端透過跟乙太網路一樣的碰撞感測演算法，偵測到碰撞已發生
+(e)	Collison will happen at node C, and each sender waits a random amount of time before trying again, where the amount of time is defined like the exponential backoff algorithm used in the Ethernet CSMA/CD protocol. 碰撞會在節點 C 發生，A 與 B 都會等待一段隨機時間後再嘗試傳送，等待的時間長度是由指數後退演算法(exponential backoff algorithm )來決定，跟乙太網路CSMA/CD協議類似
