@@ -72,3 +72,40 @@ Wireless LAN-4 exercise
 (c)	The senders realize the collision has happened when they do not receive the CTS frame after a period of time 當一段時間後，兩個傳送端都沒有收到 CTS 訊框時，他們會知道發生碰撞
 (d)	The senders realize the collision has happened by using a collision detection algorithm like the Ethernet. 兩個傳送端透過跟乙太網路一樣的碰撞感測演算法，偵測到碰撞已發生
 (e)	Collison will happen at node C, and each sender waits a random amount of time before trying again, where the amount of time is defined like the exponential backoff algorithm used in the Ethernet CSMA/CD protocol. 碰撞會在節點 C 發生，A 與 B 都會等待一段隨機時間後再嘗試傳送，等待的時間長度是由指數後退演算法(exponential backoff algorithm )來決定，跟乙太網路CSMA/CD協議類似
+
+
+Wireless LAN-5 exercise
+3.10	3456
+3.11	15
+
+3.10. Please fill in the number for the “active scanning” steps of a node to select an AP in IEEE 802.11 wireless LAN. 
+主動掃描(active scanning)是802.11無線區域中，節點去選擇AP的過程。請在下列主動掃描步驟中，填入名詞的編號。
+(1) 信標 (a Beacon)  (2) 信標回應 (a Beacon response) 
+(3) 探測 (a probe)    (4) 探測回應 (a probe response) 
+(5) 連接要求 (an association request) (6) 連接回應 (an association response)
+(7) 輪詢 (a poll)     (8) 輪詢回應 (a poll response)
+Step1. The node sends __A__ frame 
+          節點會送出一個 ___A__ 訊框。
+Step 2. All APs within reach reply with __B__ frame 
+ 所有AP會回傳一個 ___B___ 訊框。
+ 
+Step 3. The node selects one of the APs and sends that AP __C__ frame 
+      節點會從所有AP中選擇其中一個AP，然後送給AP一個 ___C___ 訊框。
+ 
+Step 4. The AP replies with  ___D___ frame 
+      AP會再回傳一個 ___D___ 訊框。
+
+3.11. Please fill in the number for the “passive scanning” steps of a node to select an AP in IEEE 802.11 wireless LAN. 
+被動掃描 (passive scanning) 是802.11無線區域中，節點去選擇AP的過程。請在下列被動掃描步驟中，填入名詞的編號。
+(1) 信標 (a Beacon)  (2) 信標回應 (a Beacon response) 
+(3) 探測 (a probe)    (4) 探測回應 (a probe response) 
+(5) 連接要求 (an association request) (6) 連接回應 (an association response)
+(7) 輪詢 (a poll)     (8) 輪詢回應 (a poll response)
+ 
+Step1. The APs periodically send __A___ frame 
+ AP 會定期的發送 ___A___ 訊框。
+Step 2. A node can change to an AP by sending it __B__ frame back to the AP
+       節點可以透過傳送 ___B___ 訊框，來切換 AP。
+
+
+
