@@ -107,5 +107,20 @@ Step1. The APs periodically send __A___ frame
 Step 2. A node can change to an AP by sending it __B__ frame back to the AP
        節點可以透過傳送 ___B___ 訊框，來切換 AP。
 
+Wireless LAN-6 exercise
+3.12	4
+
+3.12. At most how many MAC addresses may be contained in an IEEE 802.11 wireless LAN frame ?
+在IEEE 802.11無線區域網路標準中，一個訊框中最多包含幾個MAC位址？
+	2
+	3
+	4
+	5
+	6
+
+
+
+
+
 
 
