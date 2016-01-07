@@ -1,0 +1,12 @@
+The only predictable thing about the Internet is constant change.
+
+What are the underlying concepts and technologies that make the Internet work? The “why” of the Internet architecture/protocols lays the cornerstone for the Fifth Edition.
+
+Audience: the graduate or upper-division undergraduate level, industry professionals, current network practitioners.
+
+Changes in the Fifth Edition:
+
+Approach: a perspective which authors call the systems approach.
+	1. start with first principles and walk you through the thought process that led to today’s networks.
+	2. not adopt a rigidly layerist approach
+	3. illustrate how networks work in practice
