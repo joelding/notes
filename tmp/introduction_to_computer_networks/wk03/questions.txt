@@ -118,6 +118,19 @@ Wireless LAN-6 exercise
 	5
 	6
 
+Wireless LAN-7 exercise
+3.13	bc
+
+3.13. Which of the following statements are correct for the “super-frame” structure in IEEE 802.11 ? 
+下列關於IEEE 802.11超級訊框(super frame)結構的敘述是正確的？
+(a)	All super frames have the same size. 所有超級訊框都同樣大小
+(b)	Super frames may have different sizes. 超級訊框可能大小不同
+(c)	A contention-free burst occurs at the beginning, followed by a contention period. 先有一段免競爭式的叢發性流量，隨後是競爭週期 (contention period)
+(d)	A contention period occurs at the beginning, followed by a contention-free burst. 先有一段競爭式的叢發性流量，隨後是免競爭週期 (contention-free period)
+(e)	The length of the contention-free burst in each super frame is fixed. 每個超級訊框中免競爭流量的長度都是固定的
+
+
+
 
 
 
