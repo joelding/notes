@@ -1,0 +1,14 @@
+H.264
+	- MPEG-4 Part 10, Advanced Video Coding (MPEG-4 AVC)
+	- a video coding format
+	- MPEG LA administers licensing
+		- free use of H.264 technologies to end users for streaming internet video
+		- requiring royalties for commercial use of H.264 technologies
+		- Cisco Systems would pay royalties on behalf of the users of binaries for its open source H.264 encoder.
+
+References:
+	1. https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC
+	2. http://www.openh264.org/
+
+History:
+	2016/01/13	init
