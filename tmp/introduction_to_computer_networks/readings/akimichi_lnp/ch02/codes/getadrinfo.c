@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	struct addrinfo hints, *res;
 	struct in_addr addr;
 	char buf[16];
-	int err;
+	int errcode;
 	
 	if (argc != 2) {
 		fprintf(stderr, "usage: %s hostname\n", argv[0]);
@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
 	hints.ai_socktype = SOCK_STREAM;
 	hints.ai_family = AF_INET;
 	//if (getaddrinfo(argv[1], NULL, &hints, &res)) {
-	if ((err = getaddrinfo(argv[1], NULL, &hints, &res))) {
+	if ((errcode = getaddrinfo(argv[1], NULL, &hints, &res))) {
 		//perror("getaddrinfo: ");
-		fprintf(stderr, "error %d: %s\n", err, gai_strerror(err));
+		fprintf(stderr, "error %d: %s\n", errcode, gai_strerror(errcode));
 		exit(EXIT_FAILURE);
 	}
 
