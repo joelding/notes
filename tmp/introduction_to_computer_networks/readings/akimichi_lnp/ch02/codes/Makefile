@@ -4,9 +4,14 @@ LDFLAGS =
 
 SRCS = $(wildcard *.c) 
 OBJS = $(patsubst %.c, %.o, $(wildcard *.c))
-TGTS = ex01 ex02 ssrv scli ssrv2 scli2 perror perror2 nobind getadrinfo getip ssrv3
+TGTS = ex01 ex02 ssrv scli ssrv2 scli2 perror perror2 nobind getadrinfo getip ssrv3 sftp_srv sftp_cli
 
 all : $(TGTS)
+
+# sftp_cli : transmit a file to a master
+sftp_srv : sftp_srv.o
+# sftp_srv : receive a file from a client
+sftp_srv : sftp_srv.o
 
 # use getaddrinfo before bind
 ssrv3 : ssrv3.o
