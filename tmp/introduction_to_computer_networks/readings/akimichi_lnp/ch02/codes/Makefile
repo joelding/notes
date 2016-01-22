@@ -4,9 +4,12 @@ LDFLAGS =
 
 SRCS = $(wildcard *.c) 
 OBJS = $(patsubst %.c, %.o, $(wildcard *.c))
-TGTS = ex01 ex02 ssrv scli ssrv2 scli2 perror perror2 nobind getadrinfo getip
+TGTS = ex01 ex02 ssrv scli ssrv2 scli2 perror perror2 nobind getadrinfo getip ssrv3
 
 all : $(TGTS)
+
+# use getaddrinfo before bind
+ssrv3 : ssrv3.o
 
 # getadrinfo.c : practicing getaddrinfo/gethostbyname
 getadrinfo : getadrinfo.o
