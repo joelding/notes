@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 	int nsecs = 0;
 
 	while ((opt = getopt(argc, argv, "nt")) != -1) {
+		printf("opt=%c\n", opt);
 		switch (opt) {
 			case 'n':
 				flags = 1;
