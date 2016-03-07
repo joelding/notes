@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <limits.h>
+#include <string.h>
 
 static void array_print(const int *a, const unsigned size)
 {
@@ -120,7 +121,76 @@ static int merge_sort(int *a, const unsigned s, const unsigned e)
 	return 0;
 }
 
+static int min_heapify(int *a, const unsigned size, const unsigned idx)
+{
+	unsigned left = (idx + 1) * 2 - 1;
+	unsigned right = left + 1;
+	unsigned smallest = idx;
+	int tmp;
 
+	if ((left < size) && (a[left] < a[idx])) {
+		smallest = left;
+	} 
+
+	if ((right <size) && (a[right] < a[smallest])) {
+		smallest = right;
+	}
+
+	if (smallest != idx) {
+		tmp = a[idx];
+		a[idx] = a[smallest];
+		a[smallest] = tmp;
+		min_heapify(a, size, smallest);
+	}
+
+	return 0;
+}
+
+static int heap_sort(int *a, const unsigned size)
+{
+	int i;
+	int *tmp = NULL, idx = 0;
+	
+	tmp = (int *) malloc(size * sizeof(int));
+	if (!tmp) {
+		printf("Fail to malloc\n");
+		return -1;
+	}
+
+	for (i = size - 1; i > -1; --i) {
+		min_heapify(a, size, i);
+	}
+	
+	array_print(a, size);
+
+	for (i = size - 1; i > -1; --i) {
+		tmp[idx++] = a[0]; 
+		if (idx == size) {
+			break;
+		}
+
+		a[0] = a[i];
+
+		printf("move last:\n");
+		array_print(a, i);
+		
+		min_heapify(a, i, 0);
+		
+		printf("min-heapify:\n");
+		array_print(a, i);
+	}
+
+	array_print(tmp, size);
+	memcpy(a, tmp, size * sizeof(int));
+#if 0
+	for (i = 0; i < size; ++i) {
+		a[i] = tmp[i];
+	}
+#endif
+	free(tmp);
+
+	return 0;
+}
 
 int main(int argc, char *argv[])
 {
@@ -147,8 +217,10 @@ int main(int argc, char *argv[])
 	array_print(array, size);
 #if 0
 	if (!insertion_sort(array, size))
-#else
+#elif 0 
 	if (!merge_sort(array, 0, size - 1))	
+#else
+	if (!heap_sort(array, size))
 #endif
 		array_print(array, size);
 	
