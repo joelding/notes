@@ -18,6 +18,19 @@ static void array_print(const int *a, const unsigned size)
 	printf("\n");
 }
 
+static void help_print(char *f)
+{
+	if (!f) {
+		return;
+	}
+
+
+	printf("Usage: %s <sample_size> <opt>\n", f);
+	printf("opt: 1 insertion sort\n"
+		"     2 merge sort\n"
+		"     3 heap sort\n");
+}
+
 static int random_sample_get(int *a, const unsigned size)
 {
 	int ret = -1;
@@ -51,18 +64,19 @@ static int random_sample_get(int *a, const unsigned size)
 
 static int insertion_sort(int *a, const unsigned size)
 {
-	unsigned i, j;
+	int i, j;
 	int tmp;
 
 	for (i = 1; i < size; ++i) {
 		tmp = a[i];
 
-		for (j = i - 1; j >= 0; --j) {
+		for (j = i - 1; j > -1; --j) {
 			if (a[j] > tmp)	{
 				a[j + 1] = a[j];
 				a[j] = tmp;
-			} else
+			} else {
 				break;
+			}
 		}
 	}
 
@@ -161,7 +175,7 @@ static int heap_sort(int *a, const unsigned size)
 		min_heapify(a, size, i);
 	}
 	
-	array_print(a, size);
+//	array_print(a, size);
 
 	for (i = size - 1; i > -1; --i) {
 		tmp[idx++] = a[0]; 
@@ -171,16 +185,16 @@ static int heap_sort(int *a, const unsigned size)
 
 		a[0] = a[i];
 
-		printf("move last:\n");
-		array_print(a, i);
+//		printf("move last:\n");
+//		array_print(a, i);
 		
 		min_heapify(a, i, 0);
 		
-		printf("min-heapify:\n");
-		array_print(a, i);
+//		printf("min-heapify:\n");
+//		array_print(a, i);
 	}
 
-	array_print(tmp, size);
+//	array_print(tmp, size);
 	memcpy(a, tmp, size * sizeof(int));
 #if 0
 	for (i = 0; i < size; ++i) {
@@ -195,14 +209,16 @@ static int heap_sort(int *a, const unsigned size)
 int main(int argc, char *argv[])
 {
 	unsigned size = 0;
-	int *array = NULL;
+	int *array = NULL, opt, ret;
 
-	if (argc < 2) {
-		printf("Usage: %s <sample_size>\n", argv[0]);
+	if (argc < 3) {
+		//printf("Usage: %s <sample_size> <opt>\n", argv[0]);
+		help_print(argv[0]);
 		return -1;
 	}
 
 	size = atoi(argv[1]);
+	opt = atoi(argv[2]);
 	array = (int *)malloc(sizeof(int) * size);
 	if (!array) {
 		printf("%s@%d Fail to malloc\n", __func__, __LINE__);
@@ -220,9 +236,30 @@ int main(int argc, char *argv[])
 #elif 0 
 	if (!merge_sort(array, 0, size - 1))	
 #else
-	if (!heap_sort(array, size))
+//	if (!heap_sort(array, size))
 #endif
+
+	switch (opt) {
+		case 0:
+			ret = insertion_sort(array, size);
+			break;
+
+		case 1:
+			ret = merge_sort(array, 0, size - 1);	
+			break;
+
+		case 2:
+			ret = heap_sort(array, size);
+			break;
+
+		default:
+			printf("unknown opt %d\n", opt);
+			break;
+	}
+
+	if (!ret) {
 		array_print(array, size);
+	}
 	
 	free(array);
 
